@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Firki Test Suite">
+	<test name="E2E Test">
+		<classes>
+			<class name="com.Test.Ui.TC_CoursePage" />
+			<class name="com.Test.Ui.TC_HomePage" />
+		</classes>
+	</test>
+</suite>
