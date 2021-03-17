@@ -2,90 +2,90 @@
 <testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="155457" started-at="2021-03-17T18:05:39 IST" finished-at="2021-03-17T18:08:15 IST">
+  <suite name="Default suite" duration-ms="93986" started-at="2021-03-17T22:23:47 IST" finished-at="2021-03-17T22:25:21 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="155457" started-at="2021-03-17T18:05:39 IST" finished-at="2021-03-17T18:08:15 IST">
+    <test name="Default test" duration-ms="93986" started-at="2021-03-17T22:23:47 IST" finished-at="2021-03-17T22:25:21 IST">
       <class name="com.Test.Ui.TC_CoursePage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="setUp" is-config="true" duration-ms="18915" started-at="2021-03-17T18:05:39 IST" finished-at="2021-03-17T18:05:58 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="setUp" is-config="true" duration-ms="25451" started-at="2021-03-17T22:23:47 IST" finished-at="2021-03-17T22:24:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="countOfLanguagefilter()[pri:2, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="countOfLanguagefilter" duration-ms="1701" started-at="2021-03-17T18:05:58 IST" description="Verify that 6 language available in course filter or not!" finished-at="2021-03-17T18:06:00 IST">
+        <test-method status="PASS" signature="countOfLanguagefilter()[pri:2, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="countOfLanguagefilter" duration-ms="490" started-at="2021-03-17T22:24:13 IST" description="Verify that 6 language available in course filter or not!" finished-at="2021-03-17T22:24:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- countOfLanguagefilter -->
-        <test-method status="PASS" signature="courseLanguageFilter()[pri:3, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="courseLanguageFilter" duration-ms="7432" started-at="2021-03-17T18:06:00 IST" description="Verify that all language of course filter is working or not!" finished-at="2021-03-17T18:06:07 IST">
+        <test-method status="PASS" signature="courseLanguageFilter()[pri:3, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="courseLanguageFilter" duration-ms="20369" started-at="2021-03-17T22:24:13 IST" description="Verify that all language of course filter is working or not!" finished-at="2021-03-17T22:24:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- courseLanguageFilter -->
-        <test-method status="PASS" signature="ClassrommCulture()[pri:4, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="ClassrommCulture" duration-ms="192" started-at="2021-03-17T18:06:07 IST" description="Verify that Classroom culture working or not!" finished-at="2021-03-17T18:06:07 IST">
+        <test-method status="PASS" signature="ClassrommCulture()[pri:4, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="ClassrommCulture" duration-ms="372" started-at="2021-03-17T22:24:34 IST" description="Verify that Classroom culture working or not!" finished-at="2021-03-17T22:24:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClassrommCulture -->
-        <test-method status="PASS" signature="ClassroomInstruction()[pri:5, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="ClassroomInstruction" duration-ms="211" started-at="2021-03-17T18:06:07 IST" description="Verify that Classroom Instruction working or not!" finished-at="2021-03-17T18:06:08 IST">
+        <test-method status="PASS" signature="ClassroomInstruction()[pri:5, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="ClassroomInstruction" duration-ms="375" started-at="2021-03-17T22:24:34 IST" description="Verify that Classroom Instruction working or not!" finished-at="2021-03-17T22:24:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClassroomInstruction -->
-        <test-method status="PASS" signature="SchoolandCommunity()[pri:6, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="SchoolandCommunity" duration-ms="432" started-at="2021-03-17T18:06:08 IST" description="Verify that Schooland Community working or not!" finished-at="2021-03-17T18:06:08 IST">
+        <test-method status="PASS" signature="SchoolandCommunity()[pri:6, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="SchoolandCommunity" duration-ms="162" started-at="2021-03-17T22:24:34 IST" description="Verify that Schooland Community working or not!" finished-at="2021-03-17T22:24:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SchoolandCommunity -->
-        <test-method status="PASS" signature="SelfDevelopment()[pri:7, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="SelfDevelopment" duration-ms="159" started-at="2021-03-17T18:06:08 IST" finished-at="2021-03-17T18:06:08 IST">
+        <test-method status="PASS" signature="SelfDevelopment()[pri:7, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="SelfDevelopment" duration-ms="1402" started-at="2021-03-17T22:24:35 IST" finished-at="2021-03-17T22:24:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelfDevelopment -->
-        <test-method status="PASS" signature="StudentLeadership()[pri:8, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="StudentLeadership" duration-ms="140" started-at="2021-03-17T18:06:08 IST" description="Verify that  Student Leadership working or not!" finished-at="2021-03-17T18:06:08 IST">
+        <test-method status="PASS" signature="StudentLeadership()[pri:8, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="StudentLeadership" duration-ms="162" started-at="2021-03-17T22:24:36 IST" description="Verify that  Student Leadership working or not!" finished-at="2021-03-17T22:24:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StudentLeadership -->
-        <test-method status="PASS" signature="SubjectInstruction()[pri:9, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="SubjectInstruction" duration-ms="154" started-at="2021-03-17T18:06:08 IST" description="Verify that Subject Instruction working or not!" finished-at="2021-03-17T18:06:09 IST">
+        <test-method status="PASS" signature="SubjectInstruction()[pri:9, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="SubjectInstruction" duration-ms="156" started-at="2021-03-17T22:24:36 IST" description="Verify that Subject Instruction working or not!" finished-at="2021-03-17T22:24:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubjectInstruction -->
-        <test-method status="PASS" signature="TheEducationLandscape()[pri:10, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="TheEducationLandscape" duration-ms="241" started-at="2021-03-17T18:06:09 IST" description="Verify that TheEducationLandscape working or not!" finished-at="2021-03-17T18:06:09 IST">
+        <test-method status="PASS" signature="TheEducationLandscape()[pri:10, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="TheEducationLandscape" duration-ms="239" started-at="2021-03-17T22:24:36 IST" description="Verify that TheEducationLandscape working or not!" finished-at="2021-03-17T22:24:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TheEducationLandscape -->
-        <test-method status="PASS" signature="CourseLevel_I()[pri:11, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="CourseLevel_I" duration-ms="1199" started-at="2021-03-17T18:06:09 IST" description="Verify that Level-I filter working or not!" finished-at="2021-03-17T18:06:10 IST">
+        <test-method status="PASS" signature="CourseLevel_I()[pri:11, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="CourseLevel_I" duration-ms="1224" started-at="2021-03-17T22:24:37 IST" description="Verify that Level-I filter working or not!" finished-at="2021-03-17T22:24:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CourseLevel_I -->
-        <test-method status="PASS" signature="CourseLevel_II()[pri:12, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="CourseLevel_II" duration-ms="1208" started-at="2021-03-17T18:06:10 IST" description="Verify that Level-II filter working or not!" finished-at="2021-03-17T18:06:11 IST">
+        <test-method status="PASS" signature="CourseLevel_II()[pri:12, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="CourseLevel_II" duration-ms="3118" started-at="2021-03-17T22:24:38 IST" description="Verify that Level-II filter working or not!" finished-at="2021-03-17T22:24:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CourseLevel_II -->
-        <test-method status="PASS" signature="CourseLevel_III()[pri:13, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="CourseLevel_III" duration-ms="1356" started-at="2021-03-17T18:06:11 IST" description="Verify that Level-III filter working or not!" finished-at="2021-03-17T18:06:13 IST">
+        <test-method status="PASS" signature="CourseLevel_III()[pri:13, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="CourseLevel_III" duration-ms="3309" started-at="2021-03-17T22:24:41 IST" description="Verify that Level-III filter working or not!" finished-at="2021-03-17T22:24:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CourseLevel_III -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="tearDown" is-config="true" duration-ms="152" started-at="2021-03-17T18:08:14 IST" finished-at="2021-03-17T18:08:15 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Test.Ui.TC_CoursePage@3b088d51]" name="tearDown" is-config="true" duration-ms="151" started-at="2021-03-17T22:25:21 IST" finished-at="2021-03-17T22:25:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Test.Ui.TC_CoursePage -->
       <class name="com.Test.Ui.TC_HomePage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Test.Ui.TC_HomePage@1786dec2]" name="setUp" is-config="true" duration-ms="6977" started-at="2021-03-17T18:06:13 IST" finished-at="2021-03-17T18:06:20 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Test.Ui.TC_HomePage@1786dec2]" name="setUp" is-config="true" duration-ms="2974" started-at="2021-03-17T22:24:44 IST" finished-at="2021-03-17T22:24:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="courseLinkTest()[pri:1, instance:com.Test.Ui.TC_HomePage@1786dec2]" name="courseLinkTest" duration-ms="114889" started-at="2021-03-17T18:06:20 IST" description="Verify that course link is working or not!" finished-at="2021-03-17T18:08:14 IST">
+        <test-method status="FAIL" signature="courseLinkTest()[pri:1, instance:com.Test.Ui.TC_HomePage@1786dec2]" name="courseLinkTest" duration-ms="33934" started-at="2021-03-17T22:24:47 IST" description="Verify that course link is working or not!" finished-at="2021-03-17T22:25:21 IST">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.className: text_capitalize (tried for 30 second(s) with 1000 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'manprax', ip: '172.20.10.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-66-generic', java.version: '1.8.0_282'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:38433}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.90, webStorageEnabled: true}
-Session ID: e790d525c8e649b20aaede8cd4442c20]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41975}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.90, webStorageEnabled: true}
+Session ID: fdb68f84adc131e7f02849951ef3b31d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: text_capitalize (tried for 30 second(s) with 1000 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'manprax', ip: '172.20.10.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-66-generic', java.version: '1.8.0_282'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:38433}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.90, webStorageEnabled: true}
-Session ID: e790d525c8e649b20aaede8cd4442c20
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:41975}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.90, webStorageEnabled: true}
+Session ID: fdb68f84adc131e7f02849951ef3b31d
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.Pages.Base.isElementPresent(Base.java:32)
@@ -125,7 +125,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- courseLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Test.Ui.TC_HomePage@1786dec2]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-17T18:08:15 IST" finished-at="2021-03-17T18:08:15 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Test.Ui.TC_HomePage@1786dec2]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-17T22:25:21 IST" finished-at="2021-03-17T22:25:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
