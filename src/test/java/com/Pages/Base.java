@@ -16,7 +16,7 @@ public abstract class Base {
 
 	public Base(WebDriver driver, WebDriverWait wait) {
 		this.driver = driver;
-		this.wait = wait;
+		Base.wait = wait;
 
 	}
 

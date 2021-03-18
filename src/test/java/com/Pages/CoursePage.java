@@ -10,7 +10,8 @@ public class CoursePage extends Base {
 		super(driver, wait);
 	}
 
-	protected static By classroomCultureTextLocator = By.className("text_capitalize");
+	protected static By classroomCultureTextLocator = By
+			.xpath("//h3[@class=\"text_capitalize\" and contains(text(),'Classroom Culture')]");
 	protected static By courseLanguageLocator = By.xpath("//div[@class=\"dx-scrollview-content\"]/div");
 	protected static By courseLanguageDropdownLocator = By.id("lang_drpdwn");
 	protected static By courseFilterClearButtonLocator = By.xpath("//span[@class=\"dx-icon dx-icon-clear\"]");
@@ -33,9 +34,7 @@ public class CoursePage extends Base {
 	protected static By levelOneFilter = By.xpath("//span[@id=\"levels_id\" and @title=\"Level-1\"]");
 	protected static By levelTwoFilter = By.xpath("//span[@id=\"levels_id\" and @title=\"Level-2\"]");
 	protected static By levelThreeFilter = By.xpath("//span[@id=\"levels_id\" and @title=\"Level-3\"]");
-	// protected static By scrollDownLocator =
-	// By.xpath("//section[@id=\"levels\"]/label");
-	// protected static By scrollUpLocator = By.id("lang_drpdwn");
+	
 
 	public boolean isClassroomCultureText() {
 		return isElementPresent(classroomCultureTextLocator);
@@ -45,9 +44,9 @@ public class CoursePage extends Base {
 	public int selectLanguageFilter() {
 		clickOn(courseLanguageDropdownLocator);
 		int count = countofElement(courseLanguageLocator);
-		if(count>7) {
+		if (count > 7) {
 			clickOn(courseLanguageDropdownLocator);
-			
+
 		}
 
 		return count;

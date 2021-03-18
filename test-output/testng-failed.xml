@@ -3,13 +3,25 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Test.Ui.TC_HomePage">
+      <class name="com.Test.Ui.TC_CoursePage">
         <methods>
+          <include name="CourseLevel_I"/>
+          <include name="ClassroomInstruction"/>
+          <include name="CourseLevel_II"/>
           <include name="setUp"/>
+          <include name="CourseLevel_III"/>
+          <include name="SelfDevelopment"/>
+          <include name="courseLanguageFilter"/>
+          <include name="StudentLeadership"/>
+          <include name="countOfLanguagefilter"/>
           <include name="courseLinkTest"/>
           <include name="tearDown"/>
+          <include name="SchoolandCommunity"/>
+          <include name="TheEducationLandscape"/>
+          <include name="ClassrommCulture"/>
+          <include name="SubjectInstruction"/>
         </methods>
-      </class> <!-- com.Test.Ui.TC_HomePage -->
+      </class> <!-- com.Test.Ui.TC_CoursePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
