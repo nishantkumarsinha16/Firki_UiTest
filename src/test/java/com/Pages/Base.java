@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -53,7 +54,7 @@ public abstract class Base {
 
 	}
 
-	public String dropDownOption(By locator, String language) {
+	protected String dropDownOption(By locator, String language) {
 
 		List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 		for (int i = 0; i < list.size(); i++) {
@@ -66,7 +67,7 @@ public abstract class Base {
 
 	}
 
-	public void scrollUp(By locator) {
+	protected void scrollUp(By locator) {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -74,12 +75,25 @@ public abstract class Base {
 
 	}
 
-	public void scrollDown(float pixelX) {
+	protected void scrollDown(float pixelX) {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-
 		js.executeScript("scroll(0," + pixelX + ")"); // if the element is on bottom.
 
+	}
+
+	protected void enterText(String enterText, By locator) throws InterruptedException {
+		WebElement inputElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		inputElement.sendKeys(enterText);
+		inputElement.sendKeys(Keys.RETURN);
+		
+		
+	}
+
+	protected String getLinkRef(By locator) {
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		String text = element.getAttribute("data-pk");
+		return text;
 	}
 
 	public void closeBrowser() {

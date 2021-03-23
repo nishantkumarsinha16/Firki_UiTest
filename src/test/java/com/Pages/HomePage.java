@@ -14,7 +14,6 @@ public class HomePage extends Base {
 
 	public CoursePage navigateToCoursePage() {
 		clickOn(courseLocator);
-		System.out.println("1");
 		return new CoursePage(driver, wait); // Page Methods should always return page objects
 	}
 

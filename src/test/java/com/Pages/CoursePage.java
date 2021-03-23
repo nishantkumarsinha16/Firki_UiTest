@@ -1,44 +1,16 @@
 package com.Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CoursePage extends Base {
+public class CoursePage extends Base implements iCoursePageLocator {
 
 	public CoursePage(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
 	}
 
-	protected static By classroomCultureTextLocator = By
-			.xpath("//h3[@class=\"text_capitalize\" and contains(text(),'Classroom Culture')]");
-	protected static By courseLanguageLocator = By.xpath("//div[@class=\"dx-scrollview-content\"]/div");
-	protected static By courseLanguageDropdownLocator = By.id("lang_drpdwn");
-	protected static By courseFilterClearButtonLocator = By.xpath("//span[@class=\"dx-icon dx-icon-clear\"]");
-	protected static By courseCategoriesCountLocator = By.xpath("//div[@class=\"video-list-slider\"]/a");
-//Categories Locator
-	protected static By classrommCultureFilterLocator = By.xpath("//span[@data-pk=\"Classroom Culture\"]");
-	protected static By classroomInstructionFilterLocator = By.xpath("//span[@data-pk=\"Classroom Instruction\"]");
-	protected static By schoolandCommunityFilterLocator = By.xpath("//span[@data-pk=\"School and Community\"]");
-	protected static By selfDevelopmentFilterLocator = By.xpath("//span[@data-pk=\"Self Development\"]");
-	protected static By studentLeadershipFilterLocator = By.xpath("//span[@data-pk=\"Student Leadership\"]");
-	protected static By subjectInstructionFilterLocator = By.xpath("//span[@data-pk=\"Subject Instruction\"]");
-	protected static By TheEducationLandscapeFilterLocator = By.xpath("//span[@data-pk=\"The Education Landscape\"]");
-//Level Filter
-	protected static By countOfLevelOneFilter = By
-			.xpath("//div[@class=\"level_dis\"]/span[contains(text(),'Level-1')]");
-	protected static By countOfLevelTwoFilter = By
-			.xpath("//div[@class=\"level_dis\"]/span[contains(text(),'Level-2')]");
-	protected static By countOfLevelThreeFilter = By
-			.xpath("//div[@class=\"level_dis\"]/span[contains(text(),'Level-3')]");
-	protected static By levelOneFilter = By.xpath("//span[@id=\"levels_id\" and @title=\"Level-1\"]");
-	protected static By levelTwoFilter = By.xpath("//span[@id=\"levels_id\" and @title=\"Level-2\"]");
-	protected static By levelThreeFilter = By.xpath("//span[@id=\"levels_id\" and @title=\"Level-3\"]");
-	
-
 	public boolean isClassroomCultureText() {
 		return isElementPresent(classroomCultureTextLocator);
-
 	}
 
 	public int selectLanguageFilter() {
@@ -46,12 +18,9 @@ public class CoursePage extends Base {
 		int count = countofElement(courseLanguageLocator);
 		if (count > 7) {
 			clickOn(courseLanguageDropdownLocator);
-
 		}
-
 		return count;
 	}
-
 	public String[] chooseLanguage() {
 		String[] lang = { "English", "Hindi", "Kannada", "Marathi", "Tamil", "Telugu" };
 		String[] texts = { "", "", "", "", "", "", };
@@ -136,5 +105,24 @@ public class CoursePage extends Base {
 		clickOn(levelThreeFilter);
 		return isElementPresent(countOfLevelThreeFilter);
 	}
+
+	public String searchBox(String topic) throws InterruptedException {
+		enterText(topic, searchBoxLocatot);
+		String text = getLinkRef(searchCourseLocator);
+		return text;
+
+	}
+
+	public boolean clickOnCourse() throws InterruptedException {
+		clickOn(module2CourseLocator);
+		return isElementPresent(verifyModule2Locator);// सहनियंत्रण आणि मूल्यमापन #Module2
+
+	}
+
+	public boolean popUpViewCourse() throws InterruptedException {
+		clickOn(popUpViewCourseLocator);
+		return isElementPresent(courseRegisterNowLocator);
+	}
+	
 
 }
