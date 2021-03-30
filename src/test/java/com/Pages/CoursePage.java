@@ -21,6 +21,7 @@ public class CoursePage extends Base implements iCoursePageLocator {
 		}
 		return count;
 	}
+
 	public String[] chooseLanguage() {
 		String[] lang = { "English", "Hindi", "Kannada", "Marathi", "Tamil", "Telugu" };
 		String[] texts = { "", "", "", "", "", "", };
@@ -103,26 +104,38 @@ public class CoursePage extends Base implements iCoursePageLocator {
 	public boolean isLevelThree() throws InterruptedException {
 		scrollDown(200);
 		clickOn(levelThreeFilter);
-		return isElementPresent(countOfLevelThreeFilter);
+		boolean bool = isElementPresent(countOfLevelThreeFilter);
+		if (bool == true)
+			clickOn(levelThreeFilter);
+		else {
+			System.out.println("Unable to click on the Level-3 filter");
+		}
+		return bool;
 	}
 
-	public String searchBox(String topic) throws InterruptedException {
+	public String searchBox(String topic) {
 		enterText(topic, searchBoxLocatot);
+		pressEnter(searchBoxLocatot);
 		String text = getLinkRef(searchCourseLocator);
 		return text;
 
 	}
 
-	public boolean clickOnCourse() throws InterruptedException {
+	public boolean clickOnCourse() {
 		clickOn(module2CourseLocator);
 		return isElementPresent(verifyModule2Locator);// सहनियंत्रण आणि मूल्यमापन #Module2
 
 	}
 
-	public boolean popUpViewCourse() throws InterruptedException {
+	public boolean popUpViewCourse() {
 		clickOn(popUpViewCourseLocator);
 		return isElementPresent(courseRegisterNowLocator);
 	}
-	
+
+	public boolean clickOnRegsbutton() {
+		clickOn(courseRegisterNowLocator);
+		return isElementPresent(signUpTextLocator);
+
+	}
 
 }

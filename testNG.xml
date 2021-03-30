@@ -4,6 +4,7 @@
 		<classes>
 			<class name="com.Test.Ui.TC_HomePage" />
 			<class name="com.Test.Ui.TC_CoursePage" />
+			<class name="com.Test.Ui.TC_RegistrationPage" />
 		</classes>
 	</test>
 </suite>

@@ -1,5 +1,6 @@
 package com.Pages;
 
+import java.io.File;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -28,12 +29,19 @@ public abstract class Base {
 
 	}
 
+	public void checkBox(By locator) {
+		
+		WebElement checkBoxElement = wait.until(ExpectedConditions.presenceOfElementLocated(locator));		
+		checkBoxElement.click();
+	}
+
 //Check element is present or not
 	protected boolean isElementPresent(By locator) {
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		if (element == null) {
 			return false;
 		} else {
+
 			return true;// element present
 		}
 
@@ -82,18 +90,28 @@ public abstract class Base {
 
 	}
 
-	protected void enterText(String enterText, By locator) throws InterruptedException {
+	protected void enterText(String enterText, By locator) {
 		WebElement inputElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		inputElement.sendKeys(enterText);
-		inputElement.sendKeys(Keys.RETURN);
-		
-		
+	//	inputElement.sendKeys(Keys.ENTER);
+
+	}
+
+	protected void pressEnter(By locator) {
+		WebElement inputElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		inputElement.sendKeys(Keys.ENTER);
+
 	}
 
 	protected String getLinkRef(By locator) {
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		String text = element.getAttribute("data-pk");
 		return text;
+	}
+	protected void uploadFile(By locator,String path) {
+		WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		//System.out.println(fPath);
+		element.sendKeys("fPath");
 	}
 
 	public void closeBrowser() {

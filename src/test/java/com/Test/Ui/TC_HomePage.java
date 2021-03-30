@@ -18,11 +18,11 @@ public class TC_HomePage extends TestBase {
 	}
 
 	
-
-	@AfterClass
-	public void tearDown() {
-		homepage.closeBrowser();
-
-	}
+//
+//	@AfterClass
+//	public void tearDown() {
+//		homepage.closeBrowser();
+//
+//	}
 
 }

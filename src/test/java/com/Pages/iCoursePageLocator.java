@@ -33,5 +33,10 @@ public interface iCoursePageLocator {
 			.xpath("//h4[@class=\"drop-title\" or contains(text(),'सहनियंत्रण आणि मूल्यमापन #Module2')]");
 	By popUpViewCourseLocator=By.xpath("//a[@id=\"analytics_course\"]");
 	By courseRegisterNowLocator=By.xpath("//a[@id=\"analytics_register\"]");
+	By signUpTextLocator = By.xpath("//h3[contains(text(),'Sign Up')]");
+			
+	
+
+	
 
 }
