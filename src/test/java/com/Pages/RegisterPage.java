@@ -11,21 +11,29 @@ public class RegisterPage extends Base {
 	By passcodeRegLocator = By.xpath("//input[@id=\"password_reg\"]");
 	By tearmOfConditionLocator = By.id("terms_of_service");
 	By submitLocator = By.xpath("//button[@id=\"register_custom\"]");
+	By signUpTextLocator = By.xpath("//h3[contains(text(),'Sign Up')]");
+	
 
 	public RegisterPage(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
 
 	}
+	
+	public boolean ValidateRegisterPage() {
+		return isElementPresent(signUpTextLocator);
+	}
 
-	public custom_register RegistrationProcess(String USERNAME, String EMAIL, String PASSWORD) {
+	public Custom_register RegistrationProcess(String USERNAME, String EMAIL, String PASSWORD) {
 		// Thread.sleep(5000);
+		
+		System.out.println("Register page");
 		
 		enterText(USERNAME, userNameLocator);
 		enterText(EMAIL, emailRegLocator);
 		enterText(PASSWORD, passcodeRegLocator);
 		checkBox(tearmOfConditionLocator);
 		clickOn(submitLocator);
-		return new custom_register(driver, wait);
+		return new Custom_register(driver, wait);
 		//https://staging-lms.firki.co/custom_register/step2/
 
 	}

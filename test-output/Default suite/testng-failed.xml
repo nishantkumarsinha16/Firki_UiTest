@@ -3,11 +3,38 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.Test.Ui.TC_CoursePage">
+        <methods>
+          <include name="CourseLevel_I"/>
+          <include name="ClassroomInstruction"/>
+          <include name="CourseLevel_II"/>
+          <include name="setUp"/>
+          <include name="CourseLevel_III"/>
+          <include name="SelfDevelopment"/>
+          <include name="courseLanguageFilter"/>
+          <include name="clickOnCourse"/>
+          <include name="StudentLeadership"/>
+          <include name="countOfLanguagefilter"/>
+          <include name="courseSearchBox"/>
+          <include name="tearDown"/>
+          <include name="SchoolandCommunity"/>
+          <include name="TheEducationLandscape"/>
+          <include name="ClassrommCulture"/>
+          <include name="SubjectInstruction"/>
+          <include name="popUpViewCourse"/>
+        </methods>
+      </class> <!-- com.Test.Ui.TC_CoursePage -->
+      <class name="com.Test.Ui.TC_HomePage">
+        <methods>
+          <include name="courseLinkTest"/>
+        </methods>
+      </class> <!-- com.Test.Ui.TC_HomePage -->
       <class name="com.Test.Ui.TC_RegistrationPage">
         <methods>
           <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="Custom_RegistrationPage"/>
+          <include name="custom_RegistrationPage"/>
+          <include name="beforetest"/>
+          <include name="RegistrationPage"/>
         </methods>
       </class> <!-- com.Test.Ui.TC_RegistrationPage -->
     </classes>

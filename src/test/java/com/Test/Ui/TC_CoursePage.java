@@ -4,17 +4,26 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.Pages.CoursePage;
+import com.Pages.Custom_register;
 import com.Pages.HomePage;
+import com.Pages.LandingPage;
 import com.Pages.RegisterPage;
 
 public class TC_CoursePage extends TestBase {
 
 	private HomePage homepage;
 	private CoursePage coursepage;
+	// private RegisterPage regs;
+
 	private RegisterPage regs;
+	private Custom_register profile;
+	private LandingPage landingpage;
+
+	//
 
 	@BeforeClass
 	public void setUp() {
@@ -22,14 +31,20 @@ public class TC_CoursePage extends TestBase {
 		homepage = new HomePage(driver, wait);
 		coursepage = homepage.navigateToCoursePage();
 
-	}
-
-	@Test(testName = "CourseLinkActive", priority = 1, description = "Verify that course link is working or not!")
-	public void courseLinkTest() {
-		// coursepage = homepage.navigateToCoursePage();
-		Assert.assertTrue(coursepage.isClassroomCultureText());
+		regs = new RegisterPage(driver, wait);
+		profile = new Custom_register(driver, wait);
+		
 
 	}
+
+	/*
+	 * @Test(testName = "CourseLinkActive", priority = 1, description =
+	 * "Verify that course link is working or not!") public void courseLinkTest() {
+	 * // coursepage = homepage.navigateToCoursePage();
+	 * Assert.assertTrue(coursepage.isClassroomCultureText());
+	 * 
+	 * }
+	 */
 
 	@Test(testName = "CourseLanguageFilter", priority = 2, description = "Verify that 6 language available in course filter or not!")
 	public void countOfLanguagefilter() {
@@ -140,17 +155,12 @@ public class TC_CoursePage extends TestBase {
 
 	}
 
-	@Test(testName = "Open Registation Page", priority = 17, description = "Verify that user is able to click on Registation or not!")
-	public void courseRegsNow() {
-		Assert.assertTrue(coursepage.clickOnRegsbutton());
+
+
+	@AfterClass
+	public void tearDown() {
+		coursepage.closeBrowser();
 
 	}
-
-//	@AfterSuite
-//	@AfterClass
-//	public void tearDown() {
-//		regs.closeBrowser();
-//
-//	}
 
 }

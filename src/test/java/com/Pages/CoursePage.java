@@ -8,10 +8,13 @@ public class CoursePage extends Base implements iCoursePageLocator {
 	public CoursePage(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
 	}
-
+	
 	public boolean isClassroomCultureText() {
+		System.out.println("Course page");
 		return isElementPresent(classroomCultureTextLocator);
 	}
+
+
 
 	public int selectLanguageFilter() {
 		clickOn(courseLanguageDropdownLocator);
@@ -132,9 +135,12 @@ public class CoursePage extends Base implements iCoursePageLocator {
 		return isElementPresent(courseRegisterNowLocator);
 	}
 
-	public boolean clickOnRegsbutton() {
+	public RegisterPage clickOnRegsbutton() {
 		clickOn(courseRegisterNowLocator);
-		return isElementPresent(signUpTextLocator);
+		//isElementPresent(signUpTextLocator);
+		return new RegisterPage(driver, wait);
+		
+		//return isElementPresent(signUpTextLocator);
 
 	}
 

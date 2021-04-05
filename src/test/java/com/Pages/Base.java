@@ -1,6 +1,8 @@
 package com.Pages;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -30,8 +32,8 @@ public abstract class Base {
 	}
 
 	public void checkBox(By locator) {
-		
-		WebElement checkBoxElement = wait.until(ExpectedConditions.presenceOfElementLocated(locator));		
+
+		WebElement checkBoxElement = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		checkBoxElement.click();
 	}
 
@@ -93,7 +95,7 @@ public abstract class Base {
 	protected void enterText(String enterText, By locator) {
 		WebElement inputElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		inputElement.sendKeys(enterText);
-	//	inputElement.sendKeys(Keys.ENTER);
+		// inputElement.sendKeys(Keys.ENTER);
 
 	}
 
@@ -108,10 +110,25 @@ public abstract class Base {
 		String text = element.getAttribute("data-pk");
 		return text;
 	}
-	protected void uploadFile(By locator,String path) {
-		WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+	protected void uploadFile(By locator) {
+		String fPath = System.getProperty("user.dir") + "/image/firki.jpg";
+		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		//System.out.println(fPath);
-		element.sendKeys("fPath");
+		element.sendKeys(fPath);
+	}
+
+	protected void clear(By locator) {
+		WebElement inputElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		inputElement.clear();
+
+	}
+
+	protected String getUserName(By locator) {
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		String userName = element.getText();
+		return userName;
+
 	}
 
 	public void closeBrowser() {

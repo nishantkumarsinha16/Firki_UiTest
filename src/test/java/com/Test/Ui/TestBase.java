@@ -9,14 +9,15 @@ public class TestBase {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	private static String URL = "https://staging-lms.firki.co/";
-	private static String URL2 ="https://staging-lms.firki.co/register";
+	//private static String URL2 ="https://staging-lms.firki.co/register";
 
 	public void start() {
 		runLocal();
 		wait = new WebDriverWait(driver, 20, 500);
 		// wait = new WebDriverWait(driver, 30);
-		driver.get(URL2);
 		driver.manage().window().maximize();
+		driver.get(URL);
+		
 
 	}
 
