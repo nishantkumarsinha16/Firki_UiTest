@@ -5,9 +5,15 @@
     <classes>
       <class name="com.Test.Ui.TC_CoursePage">
         <methods>
+          <include name="viewCourseSignInUser"/>
+          <include name="courseSearchBox"/>
+          <include name="course_CustomRegisterPage"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="courseLanguageFilter"/>
+          <include name="clikOnPopUpViewCourse"/>
+          <include name="clikOnRegisterNow"/>
+          <include name="clickOnCourse"/>
+          <include name="courseRegisterPage"/>
         </methods>
       </class> <!-- com.Test.Ui.TC_CoursePage -->
     </classes>

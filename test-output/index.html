@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Firki_Test_Suite">
-              <span class="suite-name border-failed">Firki Test Suite</span>
+              <span class="suite-name border-passed">Firki Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Firki_Test_Suite" class="hide-methods failed suite-Firki_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Firki_Test_Suite -->
-                      <a href="#" panel-name="suite-Firki_Test_Suite" class="show-methods failed suite-Firki_Test_Suite"> (show)</a> <!-- show-methods failed suite-Firki_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Firki_Test_Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Firki_Test_Suite" title="com.Test.Ui.TC_CoursePage" hash-for-method="courseLanguageFilter">courseLanguageFilter</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Firki_Test_Suite -->
+                    <span class="method-stats">21 methods,   21 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -188,12 +174,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Firki_Test_Suite" title="com.Test.Ui.TC_HomePage" hash-for-method="courseLinkTest">courseLinkTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Firki_Test_Suite" title="com.Test.Ui.TC_CoursePage" hash-for-method="courseLanguageFilter">courseLanguageFilter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Firki_Test_Suite" title="com.Test.Ui.TC_CoursePage" hash-for-method="courseLinkTest">courseLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Firki_Test_Suite" title="com.Test.Ui.TC_HomePage" hash-for-method="courseLinkTest">courseLinkTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -228,37 +219,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Firki_Test_Suite" class="panel Firki_Test_Suite">
-          <div class="suite-Firki_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.Test.Ui.TC_CoursePage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="courseLanguageFilter">
-                  </a> <!-- courseLanguageFilter -->
-                  <span class="method-name">courseLanguageFilter</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //div[@class=&quot;dx-scrollview-content&quot;]/div (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;manprax&apos;, ip: &apos;192.168.1.168&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-67-generic&apos;, java.version: &apos;1.8.0_282&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.90 (62eb262cdaae9..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:43961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 80bc346cd8fd1673a4c89c2c53555ca4
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.Pages.Base.dropDownOption(Base.java:69)
-	at com.Pages.CoursePage.chooseLanguage(CoursePage.java:31)
-	at com.Test.Ui.TC_CoursePage.courseLanguageFilter(TC_CoursePage.java:50)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify that all language of course filter is working or not!)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Firki_Test_Suite-class-failed -->
           <div class="suite-Firki_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -391,6 +351,15 @@ Session ID: 80bc346cd8fd1673a4c89c2c53555ca4
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="courseLanguageFilter">
+                  </a> <!-- courseLanguageFilter -->
+                  <span class="method-name">courseLanguageFilter</span>
+                  <em>
+(Verify that all language of course filter is working or not!)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="courseLinkTest">
                   </a> <!-- courseLinkTest -->
                   <span class="method-name">courseLinkTest</span>
@@ -511,92 +480,92 @@ data.addRows(21);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'courseLanguageFilter')
 data.setCell(0, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(0, 3, 24336);
+data.setCell(0, 3, 10163);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'course_CustomRegisterPage')
 data.setCell(1, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(1, 3, 9755);
+data.setCell(1, 3, 8910);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'countOfLanguagefilter')
-data.setCell(2, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(2, 3, 5316);
+data.setCell(2, 1, 'courseLinkTest')
+data.setCell(2, 2, 'com.Test.Ui.TC_HomePage')
+data.setCell(2, 3, 5150);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'courseLinkTest')
-data.setCell(3, 2, 'com.Test.Ui.TC_HomePage')
-data.setCell(3, 3, 4897);
+data.setCell(3, 1, 'viewCourseSignInUser')
+data.setCell(3, 2, 'com.Test.Ui.TC_CoursePage')
+data.setCell(3, 3, 4500);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'CourseLevel_III')
+data.setCell(4, 1, 'clikOnPopUpViewCourse')
 data.setCell(4, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(4, 3, 3749);
+data.setCell(4, 3, 2975);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'viewCourseSignInUser')
+data.setCell(5, 1, 'CourseLevel_II')
 data.setCell(5, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(5, 3, 3426);
+data.setCell(5, 3, 2562);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'clikOnPopUpViewCourse')
+data.setCell(6, 1, 'clikOnRegisterNow')
 data.setCell(6, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(6, 3, 3052);
+data.setCell(6, 3, 2533);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'clikOnRegisterNow')
+data.setCell(7, 1, 'CourseLevel_III')
 data.setCell(7, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(7, 3, 2491);
+data.setCell(7, 3, 2442);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'courseLinkTest')
 data.setCell(8, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(8, 3, 1706);
+data.setCell(8, 3, 2421);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'courseSearchBox')
 data.setCell(9, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(9, 3, 1559);
+data.setCell(9, 3, 1425);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'CourseLevel_II')
+data.setCell(10, 1, 'CourseLevel_I')
 data.setCell(10, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(10, 3, 1485);
+data.setCell(10, 3, 718);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'CourseLevel_I')
+data.setCell(11, 1, 'countOfLanguagefilter')
 data.setCell(11, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(11, 3, 805);
+data.setCell(11, 3, 716);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'courseRegisterPage')
 data.setCell(12, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(12, 3, 625);
+data.setCell(12, 3, 575);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'ClassrommCulture')
+data.setCell(13, 1, 'SchoolandCommunity')
 data.setCell(13, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(13, 3, 413);
+data.setCell(13, 3, 465);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TheEducationLandscape')
+data.setCell(14, 1, 'clickOnCourse')
 data.setCell(14, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(14, 3, 397);
+data.setCell(14, 3, 388);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'SelfDevelopment')
+data.setCell(15, 1, 'TheEducationLandscape')
 data.setCell(15, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(15, 3, 270);
+data.setCell(15, 3, 377);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'StudentLeadership')
+data.setCell(16, 1, 'ClassrommCulture')
 data.setCell(16, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(16, 3, 221);
+data.setCell(16, 3, 242);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'SubjectInstruction')
+data.setCell(17, 1, 'ClassroomInstruction')
 data.setCell(17, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(17, 3, 201);
+data.setCell(17, 3, 187);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'clickOnCourse')
+data.setCell(18, 1, 'StudentLeadership')
 data.setCell(18, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(18, 3, 159);
+data.setCell(18, 3, 183);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'ClassroomInstruction')
+data.setCell(19, 1, 'SelfDevelopment')
 data.setCell(19, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(19, 3, 150);
+data.setCell(19, 3, 163);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'SchoolandCommunity')
+data.setCell(20, 1, 'SubjectInstruction')
 data.setCell(20, 2, 'com.Test.Ui.TC_CoursePage')
-data.setCell(20, 3, 146);
+data.setCell(20, 3, 147);
 window.suiteTableData['Firki_Test_Suite']= { tableData: data, tableDiv: 'times-div-Firki_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-Firki_Test_Suite">
               </div> <!-- times-div-Firki_Test_Suite -->
             </div> <!-- times-div -->
@@ -629,100 +598,98 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">courseLinkTest</span>
-                <span class="method-start">5497 ms</span>
+                <span class="method-start">4592 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Test.Ui.TC_CoursePage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10402 ms</span>
+                <span class="method-start">9773 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">courseLinkTest</span>
-                <span class="method-start">12695 ms</span>
+                <span class="method-start">11529 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">countOfLanguagefilter</span>
-                <span class="method-start">14403 ms</span>
+                <span class="method-start">13952 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">courseLanguageFilter</span>
-                <span class="method-start">19722 ms</span>
+                <span class="method-start">14670 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClassrommCulture</span>
-                <span class="method-start">44070 ms</span>
+                <span class="method-start">24845 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClassroomInstruction</span>
-                <span class="method-start">44485 ms</span>
+                <span class="method-start">25091 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SchoolandCommunity</span>
-                <span class="method-start">44637 ms</span>
+                <span class="method-start">25280 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SelfDevelopment</span>
-                <span class="method-start">44784 ms</span>
+                <span class="method-start">25746 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">StudentLeadership</span>
-                <span class="method-start">45070 ms</span>
+                <span class="method-start">25910 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SubjectInstruction</span>
-                <span class="method-start">45296 ms</span>
+                <span class="method-start">26095 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TheEducationLandscape</span>
-                <span class="method-start">45499 ms</span>
+                <span class="method-start">26243 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CourseLevel_I</span>
-                <span class="method-start">45898 ms</span>
+                <span class="method-start">26622 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CourseLevel_II</span>
-                <span class="method-start">46706 ms</span>
+                <span class="method-start">27341 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CourseLevel_III</span>
-                <span class="method-start">48193 ms</span>
+                <span class="method-start">29906 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">courseSearchBox</span>
-                <span class="method-start">51944 ms</span>
+                <span class="method-start">32352 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnCourse</span>
-                <span class="method-start">53504 ms</span>
+                <span class="method-start">33779 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clikOnPopUpViewCourse</span>
-                <span class="method-start">53665 ms</span>
+                <span class="method-start">34170 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clikOnRegisterNow</span>
-                <span class="method-start">56719 ms</span>
+                <span class="method-start">37147 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">courseRegisterPage</span>
-                <span class="method-start">59213 ms</span>
+                <span class="method-start">39682 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">course_CustomRegisterPage</span>
-                <span class="method-start">59839 ms</span>
+                <span class="method-start">40259 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">viewCourseSignInUser</span>
-                <span class="method-start">69596 ms</span>
+                <span class="method-start">49171 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73112 ms</span>
+                <span class="method-start">53753 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

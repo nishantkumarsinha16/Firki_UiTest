@@ -155,7 +155,7 @@ public class TC_CoursePage extends TestBase {
 
 	@Test(testName = "Sign Up to enrol the course", priority = 18, description = "Verify that Non-Register user is able to click on Register Now Button or not!")
 	public void courseRegisterPage() {
-		profile = regs.RegistrationProcess("SampleUser46", "SampleUser45@gmail.com", "edx");
+		profile = regs.RegistrationProcess("SampleUser48", "SampleUser48@gmail.com", "edx");
 		// Assert.assertTrue(regs.ValidateRegisterPage());
 	}
 
