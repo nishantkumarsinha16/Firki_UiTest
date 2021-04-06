@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  E2E Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>E2E Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 06 18:34:54 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>49 seconds (49152 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.ClassrommCulture()'><b>ClassrommCulture</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Classroom culture working or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.ClassroomInstruction()'><b>ClassroomInstruction</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Classroom Instruction working or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.CourseLevel_I()'><b>CourseLevel_I</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Level-I filter working or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.CourseLevel_II()'><b>CourseLevel_II</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Level-II filter working or not!</td>
+<td></td>
+<td>2</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.CourseLevel_III()'><b>CourseLevel_III</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Level-III filter working or not!</td>
+<td></td>
+<td>2</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.SchoolandCommunity()'><b>SchoolandCommunity</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Schooland Community working or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.SelfDevelopment()'><b>SelfDevelopment</b><br>Test class: com.Test.Ui.TC_CoursePage</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.StudentLeadership()'><b>StudentLeadership</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that  Student Leadership working or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.SubjectInstruction()'><b>SubjectInstruction</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Subject Instruction working or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.TheEducationLandscape()'><b>TheEducationLandscape</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that TheEducationLandscape working or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.clickOnCourse()'><b>clickOnCourse</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that user is able to click on course or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.clikOnPopUpViewCourse()'><b>clikOnPopUpViewCourse</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that user is able to click on popUp viewcourse or not!</td>
+<td></td>
+<td>2</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.clikOnRegisterNow()'><b>clikOnRegisterNow</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Non-Register user is able to click on Register Now Button or not!</td>
+<td></td>
+<td>2</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.countOfLanguagefilter()'><b>countOfLanguagefilter</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that 6 language available in course filter or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.courseLanguageFilter()'><b>courseLanguageFilter</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that all language of course filter is working or not!</td>
+<td></td>
+<td>10</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_HomePage.courseLinkTest()'><b>courseLinkTest</b><br>Test class: com.Test.Ui.TC_HomePage<br>Test method: Verify that course link is working or not!</td>
+<td></td>
+<td>5</td>
+<td>com.Test.Ui.TC_HomePage@56aac163</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.courseLinkTest()'><b>courseLinkTest</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that course link is working or not!</td>
+<td></td>
+<td>2</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.courseRegisterPage()'><b>courseRegisterPage</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Non-Register user is able to click on Register Now Button or not!</td>
+<td></td>
+<td>0</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.courseSearchBox()'><b>courseSearchBox</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that search box is working or not!</td>
+<td></td>
+<td>1</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.course_CustomRegisterPage()'><b>course_CustomRegisterPage</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Non-Register user is able to click on Register Now Button or not!</td>
+<td></td>
+<td>8</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+<tr>
+<td title='com.Test.Ui.TC_CoursePage.viewCourseSignInUser()'><b>viewCourseSignInUser</b><br>Test class: com.Test.Ui.TC_CoursePage<br>Test method: Verify that Sign In/Register user is able to click on view course button or not!</td>
+<td></td>
+<td>4</td>
+<td>com.Test.Ui.TC_CoursePage@1f7030a6</td></tr>
+</table><p>
+</body>
+</html>
