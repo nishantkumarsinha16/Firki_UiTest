@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="21" passed="21">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Firki Test Suite" duration-ms="49152" started-at="2021-04-06T18:34:54 IST" finished-at="2021-04-06T18:35:43 IST">
+    <groups>
+    </groups>
+    <test name="E2E Test" duration-ms="49152" started-at="2021-04-06T18:34:54 IST" finished-at="2021-04-06T18:35:43 IST">
+      <class name="com.Test.Ui.TC_CoursePage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="setUp" is-config="true" duration-ms="1755" started-at="2021-04-06T18:34:59 IST" finished-at="2021-04-06T18:35:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="courseLinkTest()[pri:1, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="courseLinkTest" duration-ms="2421" started-at="2021-04-06T18:35:01 IST" description="Verify that course link is working or not!" finished-at="2021-04-06T18:35:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- courseLinkTest -->
+        <test-method status="PASS" signature="countOfLanguagefilter()[pri:2, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="countOfLanguagefilter" duration-ms="716" started-at="2021-04-06T18:35:04 IST" description="Verify that 6 language available in course filter or not!" finished-at="2021-04-06T18:35:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countOfLanguagefilter -->
+        <test-method status="PASS" signature="courseLanguageFilter()[pri:3, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="courseLanguageFilter" duration-ms="10163" started-at="2021-04-06T18:35:04 IST" description="Verify that all language of course filter is working or not!" finished-at="2021-04-06T18:35:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- courseLanguageFilter -->
+        <test-method status="PASS" signature="ClassrommCulture()[pri:4, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="ClassrommCulture" duration-ms="242" started-at="2021-04-06T18:35:14 IST" description="Verify that Classroom culture working or not!" finished-at="2021-04-06T18:35:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClassrommCulture -->
+        <test-method status="PASS" signature="ClassroomInstruction()[pri:5, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="ClassroomInstruction" duration-ms="187" started-at="2021-04-06T18:35:15 IST" description="Verify that Classroom Instruction working or not!" finished-at="2021-04-06T18:35:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClassroomInstruction -->
+        <test-method status="PASS" signature="SchoolandCommunity()[pri:6, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="SchoolandCommunity" duration-ms="465" started-at="2021-04-06T18:35:15 IST" description="Verify that Schooland Community working or not!" finished-at="2021-04-06T18:35:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SchoolandCommunity -->
+        <test-method status="PASS" signature="SelfDevelopment()[pri:7, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="SelfDevelopment" duration-ms="163" started-at="2021-04-06T18:35:15 IST" finished-at="2021-04-06T18:35:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelfDevelopment -->
+        <test-method status="PASS" signature="StudentLeadership()[pri:8, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="StudentLeadership" duration-ms="183" started-at="2021-04-06T18:35:16 IST" description="Verify that  Student Leadership working or not!" finished-at="2021-04-06T18:35:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentLeadership -->
+        <test-method status="PASS" signature="SubjectInstruction()[pri:9, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="SubjectInstruction" duration-ms="147" started-at="2021-04-06T18:35:16 IST" description="Verify that Subject Instruction working or not!" finished-at="2021-04-06T18:35:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubjectInstruction -->
+        <test-method status="PASS" signature="TheEducationLandscape()[pri:10, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="TheEducationLandscape" duration-ms="377" started-at="2021-04-06T18:35:16 IST" description="Verify that TheEducationLandscape working or not!" finished-at="2021-04-06T18:35:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheEducationLandscape -->
+        <test-method status="PASS" signature="CourseLevel_I()[pri:11, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="CourseLevel_I" duration-ms="718" started-at="2021-04-06T18:35:16 IST" description="Verify that Level-I filter working or not!" finished-at="2021-04-06T18:35:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CourseLevel_I -->
+        <test-method status="PASS" signature="CourseLevel_II()[pri:12, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="CourseLevel_II" duration-ms="2562" started-at="2021-04-06T18:35:17 IST" description="Verify that Level-II filter working or not!" finished-at="2021-04-06T18:35:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CourseLevel_II -->
+        <test-method status="PASS" signature="CourseLevel_III()[pri:13, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="CourseLevel_III" duration-ms="2442" started-at="2021-04-06T18:35:20 IST" description="Verify that Level-III filter working or not!" finished-at="2021-04-06T18:35:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CourseLevel_III -->
+        <test-method status="PASS" signature="courseSearchBox()[pri:14, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="courseSearchBox" duration-ms="1425" started-at="2021-04-06T18:35:22 IST" description="Verify that search box is working or not!" finished-at="2021-04-06T18:35:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- courseSearchBox -->
+        <test-method status="PASS" signature="clickOnCourse()[pri:15, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="clickOnCourse" duration-ms="388" started-at="2021-04-06T18:35:23 IST" description="Verify that user is able to click on course or not!" finished-at="2021-04-06T18:35:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCourse -->
+        <test-method status="PASS" signature="clikOnPopUpViewCourse()[pri:16, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="clikOnPopUpViewCourse" duration-ms="2975" started-at="2021-04-06T18:35:24 IST" description="Verify that user is able to click on popUp viewcourse or not!" finished-at="2021-04-06T18:35:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clikOnPopUpViewCourse -->
+        <test-method status="PASS" signature="clikOnRegisterNow()[pri:17, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="clikOnRegisterNow" duration-ms="2533" started-at="2021-04-06T18:35:27 IST" description="Verify that Non-Register user is able to click on Register Now Button or not!" finished-at="2021-04-06T18:35:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clikOnRegisterNow -->
+        <test-method status="PASS" signature="courseRegisterPage()[pri:18, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="courseRegisterPage" duration-ms="575" started-at="2021-04-06T18:35:29 IST" description="Verify that Non-Register user is able to click on Register Now Button or not!" finished-at="2021-04-06T18:35:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- courseRegisterPage -->
+        <test-method status="PASS" signature="course_CustomRegisterPage()[pri:19, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="course_CustomRegisterPage" duration-ms="8910" started-at="2021-04-06T18:35:30 IST" description="Verify that Non-Register user is able to click on Register Now Button or not!" finished-at="2021-04-06T18:35:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- course_CustomRegisterPage -->
+        <test-method status="PASS" signature="viewCourseSignInUser()[pri:20, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="viewCourseSignInUser" duration-ms="4500" started-at="2021-04-06T18:35:39 IST" description="Verify that Sign In/Register user is able to click on view course button or not!" finished-at="2021-04-06T18:35:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCourseSignInUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Test.Ui.TC_CoursePage@1f7030a6]" name="tearDown" is-config="true" duration-ms="746" started-at="2021-04-06T18:35:43 IST" finished-at="2021-04-06T18:35:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Test.Ui.TC_CoursePage -->
+      <class name="com.Test.Ui.TC_HomePage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Test.Ui.TC_HomePage@56aac163]" name="setUp" is-config="true" duration-ms="4519" started-at="2021-04-06T18:34:50 IST" finished-at="2021-04-06T18:34:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="courseLinkTest()[pri:0, instance:com.Test.Ui.TC_HomePage@56aac163]" name="courseLinkTest" duration-ms="5150" started-at="2021-04-06T18:34:54 IST" description="Verify that course link is working or not!" finished-at="2021-04-06T18:34:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- courseLinkTest -->
+      </class> <!-- com.Test.Ui.TC_HomePage -->
+    </test> <!-- E2E Test -->
+  </suite> <!-- Firki Test Suite -->
+</testng-results>

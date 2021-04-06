@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.Test.Ui.TC_CoursePage">
+        <methods>
+          <include name="viewCourseSignInUser"/>
+          <include name="CourseLevel_I"/>
+          <include name="course_CustomRegisterPage"/>
+          <include name="ClassroomInstruction"/>
+          <include name="CourseLevel_II"/>
+          <include name="setUp"/>
+          <include name="CourseLevel_III"/>
+          <include name="SelfDevelopment"/>
+          <include name="clikOnPopUpViewCourse"/>
+          <include name="clikOnRegisterNow"/>
+          <include name="courseLanguageFilter"/>
+          <include name="clickOnCourse"/>
+          <include name="StudentLeadership"/>
+          <include name="countOfLanguagefilter"/>
+          <include name="courseSearchBox"/>
+          <include name="courseLinkTest"/>
+          <include name="tearDown"/>
+          <include name="SchoolandCommunity"/>
+          <include name="TheEducationLandscape"/>
+          <include name="ClassrommCulture"/>
+          <include name="SubjectInstruction"/>
+          <include name="courseRegisterPage"/>
+        </methods>
+      </class> <!-- com.Test.Ui.TC_CoursePage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
