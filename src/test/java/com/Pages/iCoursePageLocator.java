@@ -34,6 +34,9 @@ public interface iCoursePageLocator {
 	By popUpViewCourseLocator=By.xpath("//a[@id=\"analytics_course\"]");
 	By courseRegisterNowLocator=By.xpath("//a[@id=\"analytics_register\"]");
 	By signUpTextLocator = By.xpath("//h3[contains(text(),'Sign Up')]");
+	By enrolNowLocator=By.xpath("//a[@id=\"analytics_register\"]");
+	By viewCourseLocator=By.xpath("//a[@id=\"analytics_about\"]");
+	By getTextTeachForIndiaLocator=By.xpath("//div[@class=\"tfi-course-info-header\"]");
 			
 	
 

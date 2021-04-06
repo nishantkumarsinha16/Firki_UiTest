@@ -105,7 +105,7 @@ public abstract class Base {
 
 	}
 
-	protected String getLinkRef(By locator) {
+	protected String getAttribute(By locator) {
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		String text = element.getAttribute("data-pk");
 		return text;
@@ -129,6 +129,12 @@ public abstract class Base {
 		String userName = element.getText();
 		return userName;
 
+	}
+	
+	protected String getText(By locator) {
+		WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		String text=element.getText();
+		return text;
 	}
 
 	public void closeBrowser() {

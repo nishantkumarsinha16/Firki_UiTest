@@ -17,39 +17,48 @@ public class Custom_register extends Base {
 	By mailingAddressLocator = By.id("user_mailadd");
 	By userGoalLocator = By.id("user_goal");
 	By createProfileLocator = By.xpath("//button[@class=\"profile-btn\"]");
-	
-	
 
 	public Custom_register(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
 	}
 
-	public LandingPage custom_RegistationStep(String FULL_NAME,String GENDER,String YEAR, String EDUCATION, String ADDRESS,String GOAL) throws InterruptedException {
-		
+	public LandingPage custom_RegistationStep(String FULL_NAME, String GENDER, String YEAR, String EDUCATION,
+			String ADDRESS, String GOAL) {
+		System.out.println("Custom page");
 		uploadFile(picUploadURLLocator);
-		
 		clear(fullNameLocator);
 		enterText(FULL_NAME, fullNameLocator);
-		
 		clickOn(clickOnGenderLocator);
 		dropDownOption(genderLocator, GENDER);
-		
 		clickOn(clickOnBirthLocator);
 		dropDownOption(birthLocator, YEAR);
-		
 		clickOn(clickOneducationLevelLocator);
 		dropDownOption(educationLevelLocator, EDUCATION);
-		
 		scrollDown(500);
 		enterText(ADDRESS, mailingAddressLocator);
 		enterText(GOAL, userGoalLocator);
-		
 		clickOn(createProfileLocator);
-		
-		//Thread.sleep(5000);
-
 		return new LandingPage(driver, wait);
 
 	}
 
+	public CoursePage custom_RegistationStepsCourse(String FULL_NAME, String GENDER, String YEAR, String EDUCATION,
+			String ADDRESS, String GOAL) {
+
+		System.out.println("course_Custom page");
+		uploadFile(picUploadURLLocator);
+		clear(fullNameLocator);
+		enterText(FULL_NAME, fullNameLocator);
+		clickOn(clickOnGenderLocator);
+		dropDownOption(genderLocator, GENDER);
+		clickOn(clickOnBirthLocator);
+		dropDownOption(birthLocator, YEAR);
+		clickOn(clickOneducationLevelLocator);
+		dropDownOption(educationLevelLocator, EDUCATION);
+		scrollDown(500);
+		enterText(ADDRESS, mailingAddressLocator);
+		enterText(GOAL, userGoalLocator);
+		clickOn(createProfileLocator);
+		return new CoursePage(driver, wait);
+	}
 }

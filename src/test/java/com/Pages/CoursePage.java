@@ -8,13 +8,11 @@ public class CoursePage extends Base implements iCoursePageLocator {
 	public CoursePage(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
 	}
-	
+
 	public boolean isClassroomCultureText() {
 		System.out.println("Course page");
 		return isElementPresent(classroomCultureTextLocator);
 	}
-
-
 
 	public int selectLanguageFilter() {
 		clickOn(courseLanguageDropdownLocator);
@@ -119,7 +117,7 @@ public class CoursePage extends Base implements iCoursePageLocator {
 	public String searchBox(String topic) {
 		enterText(topic, searchBoxLocatot);
 		pressEnter(searchBoxLocatot);
-		String text = getLinkRef(searchCourseLocator);
+		String text = getAttribute(searchCourseLocator);
 		return text;
 
 	}
@@ -137,11 +135,18 @@ public class CoursePage extends Base implements iCoursePageLocator {
 
 	public RegisterPage clickOnRegsbutton() {
 		clickOn(courseRegisterNowLocator);
-		//isElementPresent(signUpTextLocator);
 		return new RegisterPage(driver, wait);
-		
-		//return isElementPresent(signUpTextLocator);
+	}
 
+	public String viewCourse() {
+		try {
+			clickOn(enrolNowLocator);
+		} catch (Exception e) {
+			clickOn(viewCourseLocator);
+		}
+		String text = getText(getTextTeachForIndiaLocator);
+		System.out.println("Course "+text);
+		return text;
 	}
 
 }

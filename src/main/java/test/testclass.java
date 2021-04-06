@@ -23,22 +23,40 @@ public class testclass {
 
 		driver.get("https://staging-lms.firki.co/login");
 		WebElement email = driver.findElement(By.id("email"));
-		email.sendKeys("nishantkumarsinha16@gmail.com");
-
+		email.sendKeys("sampleuser17@gmail.com");
+		// nishantkumarsinha16@gmail.com
 		WebElement password = driver.findElement(By.id("password"));
 		password.sendKeys("edx");
-
 		WebElement submit = driver.findElement(By.id("submit"));
 		submit.click();
+		Thread.sleep(1000);
+		// driver.navigate().to("https://staging-lms.firki.co/courses/course-v1:LeadershipForEquity+LFE112+2020_ME2/about");
+		driver.navigate().to("https://staging-lms.firki.co/courses/course-v1:Assessments+AS102+2016_T2/about");
+		Thread.sleep(2000);
+
+//		WebElement enrolNow = driver.findElement(By.linkText("Enrol Now!"));
+//		WebElement viewCourse = driver.findElement(By.linkText("View Course"));
+		try {
+			WebElement enrolNow = driver.findElement(By.xpath("//a[@id=\"analytics_register\"]"));
+			enrolNow.click();
+		}
+		catch(Exception e) {
+			WebElement viewCourse = driver.findElement(By.xpath("//a[@id=\"analytics_about\"]"));
+			viewCourse.click();
+		}
 
 		Thread.sleep(1000);
 		
-
-		WebElement element = driver.findElement(By.xpath("//a[@class=\"dropbtn theme-btn active\"]/label"));
-				//xpath("//li[@class=\"dropdown-new\"]"));
-		Thread.sleep(1000);
-		String text = element.getText();
+		WebElement getText = driver.findElement(By.xpath("//div[@class=\"tfi-course-info-header\"]"));
+		String text=getText.getText();
 		System.out.println(text);
+
+//
+//		WebElement element = driver.findElement(By.xpath("//a[@class=\"dropbtn theme-btn active\"]/label"));
+//				//xpath("//li[@class=\"dropdown-new\"]"));
+//		Thread.sleep(1000);
+//		String text = element.getText();
+//		System.out.println(text);
 
 //		WebElement username = driver.findElement(By.xpath("//li[@class=\"dropdown-new\"]"));
 //		Actions act = new Actions(driver);
