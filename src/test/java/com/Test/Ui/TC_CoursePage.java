@@ -1,19 +1,21 @@
 package com.Test.Ui;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.Loactors.iFilePath;
 import com.Pages.CoursePage;
 import com.Pages.Custom_register;
 import com.Pages.HomePage;
-import com.Pages.LandingPage;
 import com.Pages.RegisterPage;
 
-public class TC_CoursePage extends TestBase {
+import Com.ReadUtility.UtilityClass;
+
+public class TC_CoursePage extends TestBase implements iFilePath {
 
 	private HomePage homepage;
 	private CoursePage coursepage;
@@ -22,7 +24,7 @@ public class TC_CoursePage extends TestBase {
 
 	@BeforeClass
 	public void setUp() {
-		//start();
+		start();
 		homepage = new HomePage(driver, wait);
 		coursepage = homepage.navigateToCoursePage();
 		coursepage = new CoursePage(driver, wait);
@@ -82,17 +84,13 @@ public class TC_CoursePage extends TestBase {
 		Assert.assertTrue(coursepage.isSchoolandCommunity());
 	}
 
-	@Test(testName = "Categories Test", priority = 7, description = "")
+	@Test(testName = "Categories Test", priority = 7, description = "Verify that SelfDevelopment working or not! ")
 	public void SelfDevelopment() {
-		// System.out.println("7");
-
 		Assert.assertTrue(coursepage.isSelfDevelopment());
 	}
 
 	@Test(testName = "Categories Test", priority = 8, description = "Verify that  Student Leadership working or not!")
 	public void StudentLeadership() {
-		// System.out.println("8");
-
 		Assert.assertTrue(coursepage.isStudentLeadership());
 	}
 
@@ -127,9 +125,9 @@ public class TC_CoursePage extends TestBase {
 	}
 
 	@Test(testName = "Search Box Test", priority = 14, enabled = true, description = "Verify that search box is working or not!")
-	public void courseSearchBox() throws InterruptedException {
-		String actualLink = coursepage.searchBox("module");
-		Assert.assertTrue(actualLink.contains("course-v1:LeadershipForEquity+LFE112+2020_ME2"));
+	public void TC_courseSearchBox() throws InterruptedException, IOException {
+		String actualLink = coursepage.searchBox(UtilityClass.readProperty(file, "search_course"));
+		Assert.assertTrue(actualLink.contains(UtilityClass.readProperty(file, "course_search_result")));
 
 	}
 
@@ -172,7 +170,8 @@ public class TC_CoursePage extends TestBase {
 		Assert.assertEquals(courseName, courseName);
 	}
 
-	@AfterSuite
+	//@AfterSuite
+	@AfterClass
 	public void tearDown() {
 		coursepage.closeBrowser();
 

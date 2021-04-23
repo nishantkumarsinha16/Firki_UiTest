@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Firki Test Suite]">
-  <test thread-count="5" name="E2E Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Test.Ui.TC_CoursePage">
+      <class name="com.Test.Ui.TC_ResourcePage">
         <methods>
-          <include name="viewCourseSignInUser"/>
-          <include name="courseSearchBox"/>
-          <include name="course_CustomRegisterPage"/>
+          <include name="TC_Resource_subjectFilter"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="clikOnPopUpViewCourse"/>
-          <include name="clikOnRegisterNow"/>
-          <include name="clickOnCourse"/>
-          <include name="courseRegisterPage"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.Test.Ui.TC_CoursePage -->
+      </class> <!-- com.Test.Ui.TC_ResourcePage -->
     </classes>
-  </test> <!-- E2E Test(failed) -->
-</suite> <!-- Failed suite [Firki Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

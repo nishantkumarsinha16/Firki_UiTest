@@ -1,15 +1,17 @@
 package com.Pages;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import javax.swing.text.StyledEditorKit.BoldAction;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,13 +27,13 @@ public abstract class Base {
 	}
 
 // click method
-	public void clickOn(By Locator) {
+	protected void clickOn(By Locator) {
 		WebElement buttonElement = wait.until(ExpectedConditions.elementToBeClickable(Locator));
 		buttonElement.click();
 
 	}
 
-	public void checkBox(By locator) {
+	protected void checkBox(By locator) {
 
 		WebElement checkBoxElement = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		checkBoxElement.click();
@@ -51,8 +53,8 @@ public abstract class Base {
 
 	protected int countofElement(By locator) {
 
-		// WebDriverWait waitNew = new WebDriverWait(driver, 40, 3000);
-		List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+		List<WebElement> list = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+		//visibilityOfAllElementsLocatedBy
 		for (int i = 0; i < list.size(); i++) {
 			list.size();
 		}
@@ -64,20 +66,30 @@ public abstract class Base {
 
 	}
 
-	protected String dropDownOption(By locator, String language) {
+	protected String filterOption(By locator, String value) {
 
 		List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 		for (int i = 0; i < list.size(); i++) {
-			if (list.get(i).getText().contains(language)) {
+			if (list.get(i).getText().contains(value)) {
 				list.get(i).click();
 				break;
 			}
 		}
-		return language;
+		return value;
 
 	}
 
-	protected void scrollUp(By locator) {
+	protected String getMessage(By locator, String message) {
+		// List<String>data= new ArrayList<String>();
+		List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+		for (int i = 0; i < list.size(); i++) {
+			list.get(i).getText().contains(message);
+			list.get(i);
+		}
+		return message;
+	}
+
+	protected void scroll(By locator) {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -86,9 +98,15 @@ public abstract class Base {
 	}
 
 	protected void scrollDown(float pixelX) {
-
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("scroll(0," + pixelX + ")"); // if the element is on bottom.
+
+	} 
+	
+	protected void smoothScroll(By locator,float pixelX) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		js.executeScript("scroll(0," + pixelX + "),",element); // if the element is on bottom.
 
 	}
 
@@ -101,20 +119,31 @@ public abstract class Base {
 
 	protected void pressEnter(By locator) {
 		WebElement inputElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		inputElement.sendKeys(Keys.ENTER);
+		try {
+			inputElement.sendKeys(Keys.ENTER);
+			// System.out.println("ENTER");
+
+		} catch (Exception e) {
+			inputElement.sendKeys(Keys.RETURN);
+			// System.out.println("RETURN");
+
+		}
 
 	}
 
-	protected String getAttribute(By locator) {
+	protected String getAttribute(By locator, String tag) {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		String text = element.getAttribute("data-pk");
+		// presenceOfElementLocated(locator));
+		// visibilityOfElementLocated(locator));
+		String text = element.getAttribute(tag);
 		return text;
 	}
 
 	protected void uploadFile(By locator) {
 		String fPath = System.getProperty("user.dir") + "/image/firki.jpg";
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-		//System.out.println(fPath);
+		// System.out.println(fPath);
 		element.sendKeys(fPath);
 	}
 
@@ -130,11 +159,20 @@ public abstract class Base {
 		return userName;
 
 	}
-	
+
 	protected String getText(By locator) {
-		WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		String text=element.getText();
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		String text = element.getText();
 		return text;
+	}
+
+	protected List<String> getListOfElement(By locator) {
+		List<String> data = new ArrayList<String>();
+		List<WebElement> elementList = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+		for (int i = 0; i < elementList.size(); i++) {
+			data.add(elementList.get(i).getText()); // Array list
+		}
+		return data;
 	}
 
 	public void closeBrowser() {

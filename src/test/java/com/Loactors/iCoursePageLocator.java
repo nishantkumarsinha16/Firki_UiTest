@@ -1,4 +1,4 @@
-package com.Pages;
+package com.Loactors;
 
 import org.openqa.selenium.By;
 
@@ -31,15 +31,11 @@ public interface iCoursePageLocator {
 	By module2CourseLocator = By.xpath("//a[@data-pk=\"course-v1:LeadershipForEquity+LFE112+2020_ME2\"]");
 	By verifyModule2Locator = By
 			.xpath("//h4[@class=\"drop-title\" or contains(text(),'सहनियंत्रण आणि मूल्यमापन #Module2')]");
-	By popUpViewCourseLocator=By.xpath("//a[@id=\"analytics_course\"]");
-	By courseRegisterNowLocator=By.xpath("//a[@id=\"analytics_register\"]");
+	By popUpViewCourseLocator = By.xpath("//a[@id=\"analytics_course\"]");
+	By courseRegisterNowLocator = By.xpath("//a[@id=\"analytics_register\"]");
 	By signUpTextLocator = By.xpath("//h3[contains(text(),'Sign Up')]");
-	By enrolNowLocator=By.xpath("//a[@id=\"analytics_register\"]");
-	By viewCourseLocator=By.xpath("//a[@id=\"analytics_about\"]");
-	By getTextTeachForIndiaLocator=By.xpath("//div[@class=\"tfi-course-info-header\"]");
-			
-	
-
-	
+	By enrolNowLocator = By.xpath("//a[@id=\"analytics_register\"]");
+	By viewCourseLocator = By.xpath("//a[@id=\"analytics_about\"]");
+	By getTextTeachForIndiaLocator = By.xpath("//div[@class=\"tfi-course-info-header\"]");
 
 }

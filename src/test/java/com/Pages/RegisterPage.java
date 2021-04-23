@@ -1,18 +1,12 @@
 package com.Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.Loactors.iRegistrationPage;
 
-public class RegisterPage extends Base {
+public class RegisterPage extends Base implements iRegistrationPage{
 
-	By userNameLocator = By.xpath("//input[@id=\"username_reg\"]");
-	By emailRegLocator = By.xpath("//input[@id=\"email_reg\"]");
-	By passcodeRegLocator = By.xpath("//input[@id=\"password_reg\"]");
-	By tearmOfConditionLocator = By.id("terms_of_service");
-	By submitLocator = By.xpath("//button[@id=\"register_custom\"]");
-	By signUpTextLocator = By.xpath("//h3[contains(text(),'Sign Up')]");
-
+	
 	public RegisterPage(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
 

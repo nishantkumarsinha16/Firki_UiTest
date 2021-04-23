@@ -3,6 +3,8 @@ package com.Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.Loactors.iCoursePageLocator;
+
 public class CoursePage extends Base implements iCoursePageLocator {
 
 	public CoursePage(WebDriver driver, WebDriverWait wait) {
@@ -28,7 +30,7 @@ public class CoursePage extends Base implements iCoursePageLocator {
 		String[] texts = { "", "", "", "", "", "", };
 		for (int i = 0; i < lang.length; i++) {
 			clickOn(courseLanguageDropdownLocator);
-			texts[i] = dropDownOption(courseLanguageLocator, lang[i]);
+			texts[i] = filterOption(courseLanguageLocator, lang[i]);
 			clickOn(courseFilterClearButtonLocator);
 		}
 
@@ -117,7 +119,7 @@ public class CoursePage extends Base implements iCoursePageLocator {
 	public String searchBox(String topic) {
 		enterText(topic, searchBoxLocatot);
 		pressEnter(searchBoxLocatot);
-		String text = getAttribute(searchCourseLocator);
+		String text = getAttribute(searchCourseLocator, "data-pk");
 		return text;
 
 	}
@@ -145,7 +147,7 @@ public class CoursePage extends Base implements iCoursePageLocator {
 			clickOn(viewCourseLocator);
 		}
 		String text = getText(getTextTeachForIndiaLocator);
-		System.out.println("Course "+text);
+		System.out.println("Course " + text);
 		return text;
 	}
 
