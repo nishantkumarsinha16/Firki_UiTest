@@ -229,7 +229,7 @@ public class ResourcePage extends Base implements iResourcePage {
 
 		// for (String val : callback) {
 		// System.out.println("------->>> " + val);
-		/// }
+		// }
 		return callback;
 
 	}
