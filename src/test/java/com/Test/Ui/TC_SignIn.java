@@ -3,9 +3,7 @@ package com.Test.Ui;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.Pages.HomePage;
 import com.Pages.LandingPage;
 import com.Pages.SignInPage;

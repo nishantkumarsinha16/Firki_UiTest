@@ -1,11 +1,8 @@
 package com.Pages;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import javax.swing.text.StyledEditorKit.BoldAction;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -26,7 +23,7 @@ public abstract class Base {
 
 	}
 
-// click method
+	// click method
 	protected void clickOn(By Locator) {
 		WebElement buttonElement = wait.until(ExpectedConditions.elementToBeClickable(Locator));
 		buttonElement.click();
@@ -39,7 +36,7 @@ public abstract class Base {
 		checkBoxElement.click();
 	}
 
-//Check element is present or not
+	// Check element is present or not
 	protected boolean isElementPresent(By locator) {
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		if (element == null) {
@@ -54,7 +51,7 @@ public abstract class Base {
 	protected int countofElement(By locator) {
 
 		List<WebElement> list = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
-		//visibilityOfAllElementsLocatedBy
+		// visibilityOfAllElementsLocatedBy
 		for (int i = 0; i < list.size(); i++) {
 			list.size();
 		}
@@ -101,12 +98,12 @@ public abstract class Base {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("scroll(0," + pixelX + ")"); // if the element is on bottom.
 
-	} 
-	
-	protected void smoothScroll(By locator,float pixelX) {
+	}
+
+	protected void smoothScroll(By locator, float pixelX) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		js.executeScript("scroll(0," + pixelX + "),",element); // if the element is on bottom.
+		js.executeScript("scroll(0," + pixelX + "),", element); // if the element is on bottom.
 
 	}
 
@@ -169,10 +166,30 @@ public abstract class Base {
 	protected List<String> getListOfElement(By locator) {
 		List<String> data = new ArrayList<String>();
 		List<WebElement> elementList = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+
 		for (int i = 0; i < elementList.size(); i++) {
 			data.add(elementList.get(i).getText()); // Array list
+
 		}
 		return data;
+	}
+
+	protected List<String> printAllElement(By locator) {
+		List<String> data = new ArrayList<String>();
+		List<WebElement> elementList = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+		for (int i = 0; i < elementList.size(); i++) {
+			data.add(elementList.get(i).getText()); // Array list
+
+		}
+		return data;
+	}
+
+	protected void moveToElement(By locator) {
+
+		WebElement move = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+		Actions act = new Actions(driver);
+		act.moveToElement(move).perform();
+
 	}
 
 	public void closeBrowser() {
