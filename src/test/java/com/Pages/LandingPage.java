@@ -9,8 +9,7 @@ import com.Loactors.iResourcePage;
 public class LandingPage extends Base implements iResourcePage {
 
 	By userNameLocator = By.xpath("//a[@class=\"dropbtn theme-btn active\"]/label");
-
-	// By userNameLocator = By.xpath("//li[@class=\"dropdown-new\"]//label");
+	By discussionPageLocator = By.xpath("//a[@class='theme-btn' and text()='Discussions']");
 
 	public LandingPage(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
@@ -26,6 +25,11 @@ public class LandingPage extends Base implements iResourcePage {
 		clickOn(resourcePageLocator);
 		return new ResourcePage(driver, wait);
 
+	}
+
+	public DiscussionPage navigateToDiscussionPage() {
+		clickOn(discussionPageLocator);
+		return new DiscussionPage(driver, wait);
 	}
 
 }

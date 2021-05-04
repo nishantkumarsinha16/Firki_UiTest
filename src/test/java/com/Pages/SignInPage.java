@@ -9,15 +9,15 @@ public class SignInPage extends Base {
 	By emailLocator = By.id("email");
 	By passwordLocator = By.id("password");
 	By sumitLocator = By.id("submit");
-	//By signInPageLocator = By.xpath("//a[@class=\"theme-btn active sign_btn\"]");
+	// By signInPageLocator = By.xpath("//a[@class=\"theme-btn active sign_btn\"]");
 
 	public SignInPage(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
 	}
 
 	public LandingPage SignInProcess(String EMAIL, String PASSWORD) {
-		
-		//clickOn(signInPageLocator);
+
+		// clickOn(signInPageLocator);
 		clear(emailLocator);
 		enterText(EMAIL, emailLocator);
 		clear(passwordLocator);
