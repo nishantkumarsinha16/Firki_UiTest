@@ -1,19 +1,17 @@
 package com.Test.Ui;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import Com.ReadUtility.Utils;
 
 import com.Loactors.iFilePath;
 import com.Pages.CoursePage;
 import com.Pages.Custom_register;
 import com.Pages.HomePage;
 import com.Pages.RegisterPage;
-
-import Com.ReadUtility.UtilityClass;
 
 public class TC_CoursePage extends TestBase implements iFilePath {
 
@@ -126,8 +124,8 @@ public class TC_CoursePage extends TestBase implements iFilePath {
 
 	@Test(testName = "Search Box Test", priority = 14, enabled = true, description = "Verify that search box is working or not!")
 	public void TC_courseSearchBox() throws InterruptedException, IOException {
-		String actualLink = coursepage.searchBox(UtilityClass.readProperty(file, "search_course"));
-		Assert.assertTrue(actualLink.contains(UtilityClass.readProperty(file, "course_search_result")));
+		String actualLink = coursepage.searchBox(Utils.readProperty(file, "search_course"));
+		Assert.assertTrue(actualLink.contains(Utils.readProperty(file, "course_search_result")));
 
 	}
 
@@ -170,7 +168,7 @@ public class TC_CoursePage extends TestBase implements iFilePath {
 		Assert.assertEquals(courseName, courseName);
 	}
 
-	//@AfterSuite
+	// @AfterSuite
 	@AfterClass
 	public void tearDown() {
 		coursepage.closeBrowser();

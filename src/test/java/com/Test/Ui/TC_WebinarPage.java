@@ -6,14 +6,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import Com.ReadUtility.Utils;
+
 import com.Loactors.iFilePath;
 import com.Pages.HomePage;
 import com.Pages.SignInPage;
 import com.Pages.WebinarPage;
 
-import Com.ReadUtility.UtilityClass;
-
-public class TC_WebinarPage extends TestBase  implements iFilePath{
+public class TC_WebinarPage extends TestBase implements iFilePath {
 
 	HomePage homePage;
 	WebinarPage webinar;
@@ -46,7 +46,7 @@ public class TC_WebinarPage extends TestBase  implements iFilePath{
 	public void TC_searchFilter() throws IOException {
 		String attribute = webinar.verifySearchFilter();
 		// System.out.println("---CLICK ON TOPIC: " + attribute);
-		String value = UtilityClass.readProperty(file, "webinar_search_result");
+		String value = Utils.readProperty(file, "webinar_search_result");
 		Assert.assertEquals(attribute, value);
 
 	}
@@ -68,7 +68,7 @@ public class TC_WebinarPage extends TestBase  implements iFilePath{
 	public void TC_DiscussionTab() throws IOException {
 		String message = webinar.discussionTab();
 		// System.out.println("=DOM====" + dom);
-		Assert.assertEquals(message, UtilityClass.readProperty(file, "post_message"));
+		Assert.assertEquals(message, Utils.readProperty(file, "post_message"));
 
 	}
 

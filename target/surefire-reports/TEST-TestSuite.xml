@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="175.616" tests="5" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="webdriver.chrome.driver" value="/home/nishant/.cache/selenium/chromedriver/linux64/89.0.4389.23/chromedriver"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/nishant/git/Firki_UiTest/target/test-classes:/home/nishant/git/Firki_UiTest/target/classes:/home/nishant/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/nishant/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/nishant/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/nishant/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/nishant/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/nishant/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/nishant/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/nishant/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/nishant/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/nishant/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/nishant/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/nishant/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/nishant/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/nishant/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/nishant/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/home/nishant/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/nishant/.m2/repository/io/rest-assured/rest-assured/4.3.0/rest-assured-4.3.0.jar:/home/nishant/.m2/repository/org/codehaus/groovy/groovy/3.0.2/groovy-3.0.2.jar:/home/nishant/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.2/groovy-xml-3.0.2.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/home/nishant/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/nishant/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/home/nishant/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/nishant/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/nishant/.m2/repository/io/rest-assured/json-path/4.3.0/json-path-4.3.0.jar:/home/nishant/.m2/repository/org/codehaus/groovy/groovy-json/3.0.2/groovy-json-3.0.2.jar:/home/nishant/.m2/repository/io/rest-assured/rest-assured-common/4.3.0/rest-assured-common-4.3.0.jar:/home/nishant/.m2/repository/io/rest-assured/xml-path/4.3.0/xml-path-4.3.0.jar:/home/nishant/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/home/nishant/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/home/nishant/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/home/nishant/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/home/nishant/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/home/nishant/.m2/repository/io/github/bonigarcia/webdrivermanager/4.3.1/webdrivermanager-4.3.1.jar:/home/nishant/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/nishant/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/home/nishant/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/home/nishant/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/nishant/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/nishant/git/Firki_UiTest/target/surefire/surefirebooter460013695744736719.jar /home/nishant/git/Firki_UiTest/target/surefire 2021-05-13T22-15-11_087-jvmRun1 surefire1152149973398518145tmp surefire_03677834267494665148tmp"/>
+    <property name="surefire.test.class.path" value="/home/nishant/git/Firki_UiTest/target/test-classes:/home/nishant/git/Firki_UiTest/target/classes:/home/nishant/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/nishant/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/nishant/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/nishant/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/nishant/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/nishant/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/nishant/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/nishant/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/nishant/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/nishant/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/nishant/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/nishant/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/nishant/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/nishant/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/nishant/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/nishant/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/home/nishant/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/nishant/.m2/repository/io/rest-assured/rest-assured/4.3.0/rest-assured-4.3.0.jar:/home/nishant/.m2/repository/org/codehaus/groovy/groovy/3.0.2/groovy-3.0.2.jar:/home/nishant/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.2/groovy-xml-3.0.2.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/home/nishant/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/nishant/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/home/nishant/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/nishant/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/nishant/.m2/repository/io/rest-assured/json-path/4.3.0/json-path-4.3.0.jar:/home/nishant/.m2/repository/org/codehaus/groovy/groovy-json/3.0.2/groovy-json-3.0.2.jar:/home/nishant/.m2/repository/io/rest-assured/rest-assured-common/4.3.0/rest-assured-common-4.3.0.jar:/home/nishant/.m2/repository/io/rest-assured/xml-path/4.3.0/xml-path-4.3.0.jar:/home/nishant/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/home/nishant/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/home/nishant/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/home/nishant/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/home/nishant/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/home/nishant/.m2/repository/io/github/bonigarcia/webdrivermanager/4.3.1/webdrivermanager-4.3.1.jar:/home/nishant/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/nishant/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/home/nishant/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/home/nishant/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/home/nishant/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/nishant/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/nishant"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/home/nishant/git/Firki_UiTest"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/nishant/git/Firki_UiTest/target/surefire/surefirebooter460013695744736719.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_282-8u282-b08-0ubuntu1~18.04-b08"/>
+    <property name="user.name" value="nishant"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-72-generic"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/nishant/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_282"/>
+    <property name="user.dir" value="/home/nishant/git/Firki_UiTest"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="25.282-b08"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="TC_navigateToResourcePage" classname="com.Test.Ui.TC_ResourcePage" time="12.426">
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 11283
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 13, 2021 10:15:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC_subjectFilter" classname="com.Test.Ui.TC_ResourcePage" time="44.398">
+    <failure message="Expected condition failed: waiting for presence of element located by: By.xpath: //div[text()=&quot;Hindi&quot;] (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[text()="Hindi"] (tried for 20 second(s) with 500 milliseconds interval)
+	at com.Test.Ui.TC_ResourcePage.TC_subjectFilter(TC_ResourcePage.java:42)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()="Hindi"]"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'manprax', ip: '192.168.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.tMuwPH}, goog:chromeOptions: {debuggerAddress: localhost:40481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 268d2952a6c63ff500027243fde5d47b
+*** Element info: {Using=xpath, value=//div[text()="Hindi"]}
+	at com.Test.Ui.TC_ResourcePage.TC_subjectFilter(TC_ResourcePage.java:42)
+]]></failure>
+  </testcase>
+  <testcase name="TC_gradeFilter" classname="com.Test.Ui.TC_ResourcePage" time="21.687">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=89.0.4389.90)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;manprax&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-72-generic&apos;, java.version: &apos;1.8.0_282&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.tMuwPH}, goog:chromeOptions: {debuggerAddress: localhost:40481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 268d2952a6c63ff500027243fde5d47b" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'manprax', ip: '192.168.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.tMuwPH}, goog:chromeOptions: {debuggerAddress: localhost:40481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 268d2952a6c63ff500027243fde5d47b
+	at com.Test.Ui.TC_ResourcePage.TC_gradeFilter(TC_ResourcePage.java:51)
+]]></failure>
+  </testcase>
+  <testcase name="TC_resourceFilter" classname="com.Test.Ui.TC_ResourcePage" time="50.039">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //div[text()=&apos;Lesson Plan&apos;] (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[text()='Lesson Plan'] (tried for 20 second(s) with 500 milliseconds interval)
+	at com.Test.Ui.TC_ResourcePage.TC_resourceFilter(TC_ResourcePage.java:61)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Lesson Plan']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'manprax', ip: '192.168.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.tMuwPH}, goog:chromeOptions: {debuggerAddress: localhost:40481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 268d2952a6c63ff500027243fde5d47b
+*** Element info: {Using=xpath, value=//div[text()='Lesson Plan']}
+	at com.Test.Ui.TC_ResourcePage.TC_resourceFilter(TC_ResourcePage.java:61)
+]]></failure>
+  </testcase>
+  <testcase name="TC_partnersFilter" classname="com.Test.Ui.TC_ResourcePage" time="35.238">
+    <failure message="Expected condition failed: waiting for presence of element located by: By.xpath: //div[text()=&apos;British Council&apos;] (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[text()='British Council'] (tried for 20 second(s) with 500 milliseconds interval)
+	at com.Test.Ui.TC_ResourcePage.TC_partnersFilter(TC_ResourcePage.java:71)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='British Council']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'manprax', ip: '192.168.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-72-generic', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.tMuwPH}, goog:chromeOptions: {debuggerAddress: localhost:40481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 268d2952a6c63ff500027243fde5d47b
+*** Element info: {Using=xpath, value=//div[text()='British Council']}
+	at com.Test.Ui.TC_ResourcePage.TC_partnersFilter(TC_ResourcePage.java:71)
+]]></failure>
+  </testcase>
+</testsuite>

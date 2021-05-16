@@ -1,7 +1,6 @@
 package com.Pages;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -189,6 +188,16 @@ public abstract class Base {
 		WebElement move = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		Actions act = new Actions(driver);
 		act.moveToElement(move).perform();
+
+	}
+
+	public boolean validateMessage(String message) {
+		if (message.equalsIgnoreCase(message) || message.equalsIgnoreCase(message)) {
+			return true;
+		} else {
+			System.out.println("Error to create group...!!!");
+			return false;
+		}
 
 	}
 

@@ -6,12 +6,14 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import Com.ReadUtility.Utils;
+
 import com.Loactors.iFilePath;
 import com.Pages.HomePage;
 import com.Pages.LandingPage;
 import com.Pages.ResourcePage;
 import com.Pages.SignInPage;
-import Com.ReadUtility.UtilityClass;
 
 public class TC_ResourcePage extends TestBase implements iFilePath {
 	ResourcePage resource;
@@ -27,8 +29,7 @@ public class TC_ResourcePage extends TestBase implements iFilePath {
 		resource = new ResourcePage(driver, wait);
 		landingPage = new LandingPage(driver, wait);
 		homepage.navigateToSignInPage();
-		signIn.SignInProcess(UtilityClass.readProperty(file, "user_email"),
-				UtilityClass.readProperty(file, "password"));
+		signIn.SignInProcess(Utils.readProperty(file, "user_email"), Utils.readProperty(file, "password"));
 	}
 
 	@Test(testName = "Click on resource page", priority = 1, description = "Verify that user can navigate to resource page or not!")
@@ -56,7 +57,7 @@ public class TC_ResourcePage extends TestBase implements iFilePath {
 
 	}
 
-	@Test(testName = "Verify Type Of Resource filter", enabled = true, priority = 3, description = "verify that user can select Type of Resourece filter or not")
+	@Test(testName = "Verify Type Of Resource filter", enabled = true, priority = 4, description = "verify that user can select Type of Resourece filter or not")
 	public void TC_resourceFilter() throws InterruptedException {
 		String[] text = resource.typeOfResourceFilter();
 		String[] grade = { "4", "370", "2307", "25", "74" };
@@ -66,7 +67,7 @@ public class TC_ResourcePage extends TestBase implements iFilePath {
 
 	}
 
-	@Test(testName = "Verify Type Of Partners filter", priority = 3, description = "verify that user can select Partners filter or not")
+	@Test(testName = "Verify Type Of Partners filter", priority = 5, description = "verify that user can select Partners filter or not")
 	public void TC_partnersFilter() throws InterruptedException {
 		String[] text = resource.partnersFilter();
 		String[] partner = { "414", "51", "28", "23", "27", "1", "82", "97", "74", "67", "9", "16", "52", "124", "246",

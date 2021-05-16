@@ -21,7 +21,7 @@ public class TC_SignIn extends TestBase {
 	}
 
 //using json file
-	@Test(testName = "Sign In Page", enabled = false, priority = 02, description = "Verify that user can Sign in sucessfully or not !", dataProviderClass = com.DataProvider.TestDataProvider.class, dataProvider = "dp")
+	@Test(testName = "Sign In Page", enabled = false, priority = 01, description = "Verify that user can Sign in sucessfully or not !", dataProviderClass = com.DataProvider.TestDataProvider.class, dataProvider = "dp")
 	public void Login_Test(String data) {
 		String user[] = data.split(",");
 		LandingPage lp = login.SignInProcess(user[0], user[1]);
@@ -30,7 +30,7 @@ public class TC_SignIn extends TestBase {
 	}
 
 //using properties file
-	@Test(testName = "sign In page", priority = 03, enabled = true, description = "Verify login test", dataProviderClass = com.DataProvider.TestDataProvider.class, dataProvider = "propFile")
+	@Test(testName = "sign In page", priority = 02, enabled = true, description = "Verify login test", dataProviderClass = com.DataProvider.TestDataProvider.class, dataProvider = "propFile")
 	public void login_Data(String email, String pwd) {
 		LandingPage lp = login.SignInProcess(email, pwd);
 		Assert.assertEquals(lp.userName(), "nishantkumarsinha16");

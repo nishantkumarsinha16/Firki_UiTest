@@ -2,14 +2,13 @@ package com.Pages;
 
 import java.io.IOException;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.Loactors.iFilePath;
+import Com.ReadUtility.Utils;
 
-import Com.ReadUtility.UtilityClass;
+import com.Loactors.iFilePath;
 
 public class WebinarPage extends Base implements iFilePath {
 
@@ -62,7 +61,7 @@ public class WebinarPage extends Base implements iFilePath {
 
 	public String verifySearchFilter() throws IOException {
 
-		String text = UtilityClass.readProperty(file, "search_webinar");
+		String text = Utils.readProperty(file, "search_webinar");
 		enterText(text, searchBoxFilterLocator);
 		try {
 			Thread.sleep(2500);
@@ -89,7 +88,7 @@ public class WebinarPage extends Base implements iFilePath {
 		String data = "";
 		scrollDown(500);
 		clickOn(switchToDiscussionLocator);
-		enterText(UtilityClass.readProperty(file, "post_message"), postMessageLocator);
+		enterText(Utils.readProperty(file, "post_message"), postMessageLocator);
 		clickOn(sendButtonLocator);
 		refresh();
 		clickOn(switchToDiscussionLocator);

@@ -2,9 +2,13 @@
 <suite name="Firki Test Suite">
 	<test name="E2E Test">
 		<classes>
-			<class name="com.Test.Ui.TC_HomePage" />
+			<!--<class name="com.Test.Ui.TC_HomePage" />
 			<class name="com.Test.Ui.TC_CoursePage" />
 			<class name="com.Test.Ui.TC_RegistrationPage" />
+			<class name="com.Test.Ui.TC_WebinarPage" />
+			<class name="com.Test.Ui.TC_ResourcePage" />
+			<class name="com.Test.Ui.TC_DiscussionPage" />-->
+			<class name="com.Test.Ui.TC_ResourcePage" />
 		</classes>
 	</test>
 </suite>

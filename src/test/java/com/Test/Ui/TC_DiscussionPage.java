@@ -11,7 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Com.ReadUtility.UtilityClass;
+import Com.ReadUtility.Utils;
 
 public class TC_DiscussionPage extends TestBase implements iFilePath {
 
@@ -28,14 +28,29 @@ public class TC_DiscussionPage extends TestBase implements iFilePath {
         landingPage = new LandingPage(driver, wait);
         discussion = new DiscussionPage(driver, wait);
         homepage.navigateToSignInPage();
-        signIn.SignInProcess(UtilityClass.readProperty(file, "user_email"),
-                UtilityClass.readProperty(file, "password"));
+        signIn.SignInProcess(Utils.readProperty(file, "user_email"), Utils.readProperty(file, "password"));
     }
 
     @Test(testName = "Verify Discussion page", priority = 1, description = "Verify that user can navigate to discussion page or not")
     public void TC_myLeaningCircle() {
         DiscussionPage discussion = landingPage.navigateToDiscussionPage();
         Assert.assertTrue(discussion.myLearningCircle());
+
+    }
+
+    @Test(testName = "Verify Create New Circle", enabled = true, priority = 2, description = "Verify that user can create new circle or not")
+    public void Tc_createNewCircle() throws IOException {
+
+        String msg = discussion.createCircle(Utils.readProperty(file, "groupName"), Utils.readProperty(file, "about"),
+                Utils.readProperty(file, "member"), Utils.readProperty(file, "owner"));
+
+        Assert.assertEquals(msg, Utils.readProp(file, "message"));
+
+    }
+
+    @Test(testName = "Validate create circle", enabled = true, priority = 3, description = "Verify that user can open circle which is creaded")
+    public void TC_validateGroup() {
+        discussion.validateCircle();
 
     }
 

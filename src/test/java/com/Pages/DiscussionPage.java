@@ -1,13 +1,10 @@
 package com.Pages;
 
-import org.openqa.selenium.By;
+import com.Loactors.iDiscussionPageLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
 
-public class DiscussionPage extends Base {
-
-    By myLearningCircleText = By.xpath("//span[text()='My Learning Circle']");
+public class DiscussionPage extends Base implements iDiscussionPageLocator {
 
     public DiscussionPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -19,9 +16,37 @@ public class DiscussionPage extends Base {
 
     }
 
-    @AfterClass
-    public void tearDown() {
-        closeBrowser();
+    public String createCircle(String circleName, String aboutCircle, String members, String owners) {
+        String message = "";
+        clickOn(createCircleLocator);
+        // uploadFile(uploadImageLocator);
+        enterText(circleName, createNameLocator);
+        enterText(aboutCircle, aboutCircleLocator);
+        enterText(members, membersCircleLocator);
+        clickOn(selectUserLocator);
+        enterText(owners, ownersCircleLocator);
+        clickOn(selectUserLocator);
+        clickOn(leaveGroupFreelyeLocator);
+        clickOn(createCicleLocator);
+        try {
+
+            message = getText(tostTitleLocator);
+            // System.out.println(message);
+
+        } catch (Exception e) {
+            clickOn(closeCreateCirclePopUpLocator);
+            // message = getText(tostTitleFailLocator);
+            System.out.println("Error: Group name already exist");
+
+        }
+
+        return message;
+
+    }
+
+    public void validateCircle() {
+        moveToElement(moveElement);
+        clickOn(moveElement);
 
     }
 
