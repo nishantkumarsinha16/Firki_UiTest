@@ -1,6 +1,8 @@
 package com.Test.Ui;
 
 import java.io.IOException;
+import java.util.List;
+
 import com.Loactors.iFilePath;
 import com.Pages.DiscussionPage;
 import com.Pages.HomePage;
@@ -10,7 +12,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import Com.ReadUtility.Utils;
 
 public class TC_DiscussionPage extends TestBase implements iFilePath {
@@ -38,7 +39,7 @@ public class TC_DiscussionPage extends TestBase implements iFilePath {
 
     }
 
-    @Test(testName = "Verify Create New Circle", enabled = true, priority = 2, description = "Verify that user can create new circle or not")
+    @Test(testName = "Verify Create New Circle", enabled = false, priority = 2, description = "Verify that user can create new circle or not")
     public void Tc_createNewCircle() throws IOException {
 
         String msg = discussion.createCircle(Utils.readProperty(file, "groupName"), Utils.readProperty(file, "about"),
@@ -48,9 +49,19 @@ public class TC_DiscussionPage extends TestBase implements iFilePath {
 
     }
 
-    @Test(testName = "Validate create circle", enabled = true, priority = 3, description = "Verify that user can open circle which is creaded")
-    public void TC_validateGroup() {
-        discussion.validateCircle();
+    @Test(testName = "Validate create circle", enabled = true, priority = 3, description = "Verify that user can open circle which is creaded and owner and member are present or not")
+    public void TC_validateGroup() throws InterruptedException, IOException {
+        String user = "";
+        String[] members = discussion.validateCircle();
+
+        for (String s : members) {
+            user += s.replaceAll(" ", "");
+
+        }
+        // System.out.println(user);
+        System.out.println(Utils.readProp(file, "group.details"));
+
+        Assert.assertEquals(user, Utils.readProp(file, "group.details"));
 
     }
 

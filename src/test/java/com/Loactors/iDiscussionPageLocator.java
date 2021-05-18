@@ -23,7 +23,7 @@ public interface iDiscussionPageLocator extends iFilePath {
     // By listOfCircleLocator = By.xpath("//span[@class='content ng-binding']");
 
     // -----------------------Parameterise xpath------------------------------------
-    By moveElement = By.xpath("//span[@title='" + Utils.readProp(file, "groupName") + "']");
+    By groupLocator = By.xpath("//span[@title='" + Utils.readProp(file, "groupName") + "']");
     // --------------------------------------------------------------------------------------
 
 }
