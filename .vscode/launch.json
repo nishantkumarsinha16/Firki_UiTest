@@ -5,6 +5,76 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch FindFibonacci",
+            "request": "launch",
+            "mainClass": "com.practise.FindFibonacci",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseString",
+            "request": "launch",
+            "mainClass": "com.practise.ReverseString",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseNumber",
+            "request": "launch",
+            "mainClass": "com.practise.ReverseNumber",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindFactorial",
+            "request": "launch",
+            "mainClass": "com.practise.FindFactorial",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintMultipleTable",
+            "request": "launch",
+            "mainClass": "com.practise.PrintMultipleTable",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindLeapYear",
+            "request": "launch",
+            "mainClass": "com.practise.FindLeapYear",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindEvenAndOdd",
+            "request": "launch",
+            "mainClass": "com.practise.FindEvenAndOdd",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindGreaterNumber",
+            "request": "launch",
+            "mainClass": "com.practise.FindGreaterNumber",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwapNumber",
+            "request": "launch",
+            "mainClass": "com.practise.SwapNumber",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeNumber",
+            "request": "launch",
+            "mainClass": "com.practise.PrimeNumber",
+            "projectName": "Firki_Platform"
+        },
+        {
             "name": "Launch Chrome",
             "request": "launch",
             "type": "pwa-chrome",
