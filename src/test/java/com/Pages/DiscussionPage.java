@@ -1,20 +1,18 @@
 package com.Pages;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
-
 import com.Loactors.iDiscussionPageLocator;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Com.ReadUtility.Utils;
+
 public class DiscussionPage extends Base implements iDiscussionPageLocator {
 
-    By ownerListLocator = By.xpath("//span[@class='owner_m ng-binding ng-scope']");
-    By memberListLocator = By.xpath("//span[@class='member_m ng-binding ng-scope']");
+    By attachFileLocator = By.xpath("//span[@class='attachment-icon']");
 
     public DiscussionPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -39,23 +37,17 @@ public class DiscussionPage extends Base implements iDiscussionPageLocator {
         clickOn(leaveGroupFreelyeLocator);
         clickOn(createCicleLocator);
         try {
-
             message = getText(tostTitleLocator);
-            // System.out.println(message);
-
         } catch (Exception e) {
             clickOn(closeCreateCirclePopUpLocator);
-            // message = getText(tostTitleFailLocator);
             System.out.println("Error: Group name already exist");
-
         }
-
         return message;
 
     }
 
-    public String[] validateCircle() throws InterruptedException, IOException {
-        String str = "";
+    public String[] validateCircle() throws InterruptedException {
+        // String str = "";
 
         List<String> listmember = new ArrayList<String>();
         String stringArr[] = new String[listmember.size()];
@@ -65,8 +57,8 @@ public class DiscussionPage extends Base implements iDiscussionPageLocator {
 
         // Hashtable<String, String> hastable = new Hashtable<String, String>();
 
-        Properties p = new Properties();
-        Thread.sleep(2000);
+        // Properties p = new Properties();
+        Thread.sleep(3000);
         List<String> ownerList = printAllElement(ownerListLocator);
         for (String owner : ownerList) {
             listmember.add(owner);
@@ -87,6 +79,7 @@ public class DiscussionPage extends Base implements iDiscussionPageLocator {
          * }
          */
         // -------------------------------------------------------------------------------------
+
         List<String> memberList = printAllElement(memberListLocator);
         for (String member : memberList) {
             listmember.add(member);
@@ -105,22 +98,57 @@ public class DiscussionPage extends Base implements iDiscussionPageLocator {
         // listString += s;
         // }
         // }
-
         // System.out.println("---------" + listString);
-
         // for (String s : stringArr) {
         // str += s;
-
         // }
         // System.out.println("===========" + str);
+        /* --------------------Create property file and write some sata */
         // p.setProperty("group_details", str);
         // p.store(new FileWriter("info.properties"), "Nishant: Discussion page");
-
         // System.out.println(str);
         // File f = new File(System.getProperty("user.dir") + "/token.txt");
         // FileUtils.write(f, token);
 
         return stringArr;
+
+    }
+
+    public String createPost() throws InterruptedException {
+        String message = "";
+        moveToElement(groupLocator);
+        clickOn(groupLocator);
+        clickOn(createNewTopicLocator);
+        Thread.sleep(50);
+        enterText(Utils.readProp(file, "topicName"), inputTitleLocator);
+        enterText(Utils.readProp(file, "toipcMessage"), InputMsgLocator);
+        clickOn(createTopicButtonLocator);
+        try {
+            message = getText(tostMsgCreateTopicLocator);
+        } catch (Exception e) {
+            clickOn(closeCreateTopicLocator);
+            System.out.println("Error: Topic name already exist");
+        }
+        // System.out.println("*************" + message);
+        moveToElement(openTopicLocator);
+        clickOn(openTopicLocator);
+        return message;
+
+    }
+
+    public String postMessage() {
+        String msg = "";
+        moveToElement(openTopicLocator);
+        clickOn(openTopicLocator);
+        enterText(Utils.readProp(file, "postMessage"), postMsgLocator);
+        clickOn(sendButtonLocator);
+        msg = getText(VerifyMsgLocator);
+        return msg;
+
+    }
+
+    public void attachFile() {
+        clickOn(attachFileLocator);
 
     }
 

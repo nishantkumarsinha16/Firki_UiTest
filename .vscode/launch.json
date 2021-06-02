@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LexicographicalOrder",
+            "request": "launch",
+            "mainClass": "com.practise.LexicographicalOrder",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindDuplicateFromString",
+            "request": "launch",
+            "mainClass": "com.practise.FindDuplicateFromString",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo",
+            "request": "launch",
+            "mainClass": "com.Pages.Demo",
+            "projectName": "Firki_Platform"
+        },
+        {
+            "type": "java",
             "name": "Launch FindFibonacci",
             "request": "launch",
             "mainClass": "com.practise.FindFibonacci",

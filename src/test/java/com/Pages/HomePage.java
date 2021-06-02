@@ -21,6 +21,12 @@ public class HomePage extends Base implements iHomePageLocator {
 
 	}
 
+	public RegisterPage navigateToSignUpPage() {
+		clickOn(signUpPageLocator);
+		return new RegisterPage(driver, wait);
+
+	}
+
 	public WebinarPage navigateToWebinarPage() {
 		clickOn(webinarLocator);
 		return new WebinarPage(driver, wait);

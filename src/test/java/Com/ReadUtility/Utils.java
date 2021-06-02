@@ -10,15 +10,17 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import io.restassured.path.json.JsonPath;
+
 public class Utils {
 
 	public static JSONArray readJson(File file, String key) throws IOException, ParseException {
-		FileReader reader = new FileReader(file);
 		JSONParser jsonParser = new JSONParser();
+		FileReader reader = new FileReader(file);
 		Object obj = jsonParser.parse(reader);
-		JSONObject userLoginJsonObj = (JSONObject) obj;
-		JSONArray userLoginArray = (JSONArray) userLoginJsonObj.get(key);
-		return userLoginArray;
+		JSONObject jsonObj = (JSONObject) obj;
+		JSONArray jsonArray = (JSONArray) jsonObj.get(key);
+		return jsonArray;
 
 	}
 
@@ -51,6 +53,12 @@ public class Utils {
 
 		return key;
 
+	}
+
+	public static String readJsonFile(String key) {
+		JsonPath jsonPath = new JsonPath(new File(System.getProperty("user.dir") + "/data/userdetail.json"));
+		String value = jsonPath.get(key) + "";
+		return value;
 	}
 
 }

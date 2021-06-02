@@ -9,15 +9,12 @@ public class FindGreaterNumber {
     public static void main(String[] args) {
 
         twoNumber();
-
         FindGreaterNumber c = new FindGreaterNumber();
         c.largestTwoNumber();
-
     }
 
     public static void twoNumber() {
         /* Method 1 */
-
         if (a > b && a > c) {
             System.out.println("a is greater " + a);
         } else if (b > a && b > c) {

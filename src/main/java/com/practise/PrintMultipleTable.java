@@ -7,8 +7,8 @@ public class PrintMultipleTable {
 
         for (int i = 1; i <= 10; i++) {
 
-            int tables = i * table;
-            System.out.println(table + "*" + i + "=" + tables);
+            int output = i * table;
+            System.out.println(table + "*" + i + "=" + output);
 
         }
     }

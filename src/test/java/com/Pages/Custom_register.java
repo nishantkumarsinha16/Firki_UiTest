@@ -2,20 +2,22 @@ package com.Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import com.Loactors.iFilePath;
 import com.Loactors.iRegistrationPage;
 
-public class Custom_register extends Base implements iRegistrationPage {
+public class Custom_register extends Base implements iRegistrationPage, iFilePath {
 
 	public Custom_register(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
 	}
 
 	public LandingPage custom_RegistationStep(String FULL_NAME, String GENDER, String YEAR, String EDUCATION,
-			String ADDRESS, String GOAL) {
-		System.out.println("Custom page");
-		uploadFile(picUploadURLLocator);
+			String ADDRESS, String GOAL) throws InterruptedException {
+
+		Thread.sleep(5000);
+		uploadFile(picUploadURLLocator, imagePath);
 		clear(fullNameLocator);
+		System.out.println("Custom page");
 		enterText(FULL_NAME, fullNameLocator);
 		clickOn(clickOnGenderLocator);
 		filterOption(genderLocator, GENDER);
@@ -35,7 +37,7 @@ public class Custom_register extends Base implements iRegistrationPage {
 			String ADDRESS, String GOAL) {
 
 		System.out.println("course_Custom page");
-		uploadFile(picUploadURLLocator);
+		uploadFile(picUploadURLLocator, imagePath);
 		clear(fullNameLocator);
 		enterText(FULL_NAME, fullNameLocator);
 		clickOn(clickOnGenderLocator);

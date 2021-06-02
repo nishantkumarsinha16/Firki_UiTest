@@ -26,4 +26,24 @@ public interface iDiscussionPageLocator extends iFilePath {
     By groupLocator = By.xpath("//span[@title='" + Utils.readProp(file, "groupName") + "']");
     // --------------------------------------------------------------------------------------
 
+    // -------------------------Owner & MemberList--------------------------------
+    By ownerListLocator = By.xpath("//span[@class='owner_m ng-binding ng-scope']");
+    By memberListLocator = By.xpath("//span[@class='member_m ng-binding ng-scope']");
+
+    // ---------------------------Create Topic--------------------------------
+    By createNewTopicLocator = By.xpath("//span[@class='createtopic pointer ng-scope']//i");
+    By inputTitleLocator = By.xpath("//input[@id='topicTitle']");
+    By InputMsgLocator = By.xpath("//textarea[@id='newTopic_create']");
+    By createTopicButtonLocator = By.xpath("//button[@class='btn btn-primary ng-binding']");
+    By tostMsgCreateTopicLocator = By
+            .xpath("//div[@class='dx-overlay-content dx-toast-success dx-toast-content dx-resizable']");
+    By closeCreateTopicLocator = By.xpath("//button[@class='close_btn']");
+
+    // --------------------------Open Topic ----------------------------------------
+    By openTopicLocator = By.xpath("//span[normalize-space() = '" + Utils.readProp(file, "topicName") + "']");
+
+    By postMsgLocator = By.xpath("//div[@id='post_message']");
+    By sendButtonLocator = By.xpath("//div[@class='cmntboxarea']");
+    By VerifyMsgLocator = By.xpath("//p[text()='" + Utils.readProp(file, "postMessage") + "']");
+
 }

@@ -14,7 +14,6 @@ public class FindSwapNumber {
         /* Method - 1 */
         int a = 100;
         int b = 500;
-
         int c = a;
         a = b;
         b = c;

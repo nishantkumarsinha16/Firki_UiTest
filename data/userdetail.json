@@ -1,16 +1,12 @@
 {
-
   "userlogins": [
     {
-      "username": "nishantkumarsinha16@gmail.com",
+      "username": "edx@gmail.com",
       "password": "edx"
-    },
-
-    {
-      "username": "nishantkumarsinha16@gmail.com",
-      "password": "edx"
-
     }
-  ]
+  ],
+  "group_details":[ {
+      "name":"nishant"
+    }
+  ] 
 }
-

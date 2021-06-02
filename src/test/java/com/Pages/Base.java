@@ -1,5 +1,6 @@
 package com.Pages;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -136,8 +137,8 @@ public abstract class Base {
 		return text;
 	}
 
-	protected void uploadFile(By locator) {
-		String fPath = System.getProperty("user.dir") + "/image/firki.jpg";
+	protected void uploadFile(By locator, String fPath) {
+		// String fPath = System.getProperty("user.dir") + "/datastorage/" + file + "";
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		// System.out.println(fPath);
 		element.sendKeys(fPath);
