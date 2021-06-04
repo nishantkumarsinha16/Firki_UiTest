@@ -6,7 +6,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import Com.ReadUtility.Utils;
-
 import com.Loactors.iFilePath;
 import com.Pages.CoursePage;
 import com.Pages.Custom_register;
