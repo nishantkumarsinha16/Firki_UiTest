@@ -25,7 +25,6 @@ public class FindDuplicateFromString {
             // System.out.println(word + " : " + wordCount.get(word));
         }
         System.out.println(wordCount);
-
         final Set<String> wordsInString = wordCount.keySet();
         for (String word : wordsInString) {
             if (wordCount.get(word) > 1) {
